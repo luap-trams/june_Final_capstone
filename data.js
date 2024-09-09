@@ -136,7 +136,7 @@ export const properties = [
     status: "Available"
   },
   {
-    title: "Mini Flat In Ojota",
+    title: "Studio Apartment In Yaba",
     description: "Compact and affordable studio apartment for young professionals or students.",
     category: "Apartment",
     type: "Rent",
@@ -144,7 +144,7 @@ export const properties = [
     status: "Available"
   },
   {
-    title: "Land in Ajah",
+    title: "Family Home In Surulere",
     description: "Residential plot with potential for building a dream home.",
     category: "Land",
     type: "Sale",
@@ -153,7 +153,7 @@ export const properties = [
     status: "Available"
   },
   {
-    title: "Shop in Alaba",
+    title: "Studio Apartment In Yaba",
     description: "Commercial shop in a bustling market area with high foot traffic.",
     category: "Commercial",
     type: "Rent",
@@ -170,7 +170,7 @@ export const properties = [
     status: "Available"
   },
   {
-    title: "Mini Flat in Ojota",
+    title: "Family Home In Surulere",
     description: "Affordable mini flat for students or young professionals, close to public transportation.",
     category: "Apartment",
     type: "Rent",
