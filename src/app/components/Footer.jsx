@@ -37,7 +37,7 @@ export default function Footer() {
     <div className='font-thin'>
       <h1 className='mt-0 text-2xl py-5 flex place-items-stretch hover:text-blue-900 uppercase font-bold'>Social</h1>
       
-      <Link href={'https://github.com/luap-trams'} className='hover:text-blue-400'>
+      <Link href={'https://github.com/luap-trams/june_Final_capstone'} className='hover:text-blue-400'>
       <p>Github</p>
       </Link>
       
