@@ -3,7 +3,7 @@ import Link from 'next/link';
 import MobileNav from './MobileNav';
 import { useContext } from 'react';
 import { SidebarContext } from '../providers';
-import Image from 'next/Image';
+import Image from 'next/image';
 
 export default function Navibar() {  
     const {val} = useContext(SidebarContext)

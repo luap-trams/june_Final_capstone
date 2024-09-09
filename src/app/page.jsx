@@ -1,4 +1,4 @@
-import Image from 'next/Image'
+import Image from 'next/image'
 import PropertyLists from './components/PropertyLists'
 import Header from './components/Header'
 import "@fontsource/roboto/latin-400.css";

@@ -1,7 +1,7 @@
 'use client'
 import { useContext } from "react"
 import { SidebarContext } from "../providers"
-import Image from "next/Image"
+import Image from "next/image"
 
 export default function WishesPage() {
     const { propItem } = useContext(SidebarContext)
