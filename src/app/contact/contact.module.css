@@ -1,0 +1,15 @@
+.luap {
+    min-height: 100vh;
+    background: linear-gradient(45deg, blue 30%, green 30%, red 60%, khaki 60%);
+}
+.luap h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding-block: 1em;
+    text-align: center;
+}
+.smart{
+    border: 15px solid blue;
+    width: 60%;
+    margin: auto;
+}
