@@ -57,7 +57,7 @@ export const properties = [
     status: "Available"
   },
   {
-    title: "Land in Ajah",
+    title: "Land In Ajah",
     description: "Residential plot with potential for building a dream home.",
     category: "Land",
     type: "Sale",
@@ -66,7 +66,7 @@ export const properties = [
     status: "Available"
   },
   {
-    title: "Shop in Alaba",
+    title: "Mini Flat In Ojota",
     description: "Commercial shop in a bustling market area with high foot traffic.",
     category: "Commercial",
     type: "Rent",
@@ -136,7 +136,7 @@ export const properties = [
     status: "Available"
   },
   {
-    title: "Studio Apartment in Yaba",
+    title: "Mini Flat In Ojota",
     description: "Compact and affordable studio apartment for young professionals or students.",
     category: "Apartment",
     type: "Rent",
