@@ -7,7 +7,7 @@ export const metadata = {
 
 
 import React from 'react'
-import Image from 'next/Image';
+import Image from 'next/image';
 export default function layout() {
   return (
 
