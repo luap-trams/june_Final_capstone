@@ -1,5 +1,5 @@
 import React from 'react'
-import smart from './contact.module.css'
+// import smart from './contact.module.css'
 
 export default function ContactPage() {
   return (
@@ -20,7 +20,7 @@ export default function ContactPage() {
         </div>
 
         <div className='bg-blue-300 text-center py-12 px-12 rounded-3xl'>
-          <h2 className='text-2xl my-2'>Talk to a member of our sales team</h2>
+          <h2 className='text-2xl my-2'>Talk to a member of our support team</h2>
           <p>We'll love to connect with you to learn more about what you have to say</p>
           <input type="button" value="contact support" className='bg-black text-white hover:bg-blue-900 py-2 px-2 rounded-xl my-5 w-48 capitalize'/>
         </div>
