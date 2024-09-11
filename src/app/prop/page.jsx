@@ -17,7 +17,7 @@ export default function PropertyPage() {
     const filterLists = properties.filter( prop => prop.title.toLowerCase().includes(searchProp.toLowerCase()) || prop.category.toLowerCase().includes(searchProp.toLowerCase()))
     
     const cards = filterLists.length == 0 ?(
-      <h1>Oops, No results found. Explore other options or contact us for assistance.</h1>
+      <h1 className='flex items-center justify-center w-screen'>Oops, No results found. Explore other options or contact us for assistance.</h1>
     ) : filterLists.map((card,index) => (
       <section key={index}>
       
@@ -31,7 +31,7 @@ export default function PropertyPage() {
     <>
     <div className='flex items-center justify-between p-3 border-4 rounded-full mt-4 border-blue-400 w-full sm:w-3/4 md:w-1/2 lg:w-2/5 xl:w-1/3 m-auto'>
     
-    <input type="text" name='search' id='search' className='outline-none block mt-4 w-4/5 text-2xl' placeholder='Discover available properties…' defaultValue={searchProp} onChange={(e)=>filterSearch(e)}/>
+    <input type="text" name='search' id='search' className='outline-none block mt-4 w-4/5 text-2xl' placeholder='Discover available properties…' defaultValue={searchProp} onChange={(e)=>filterSearch(e)} style={{ backgroundColor: 'transparent' }}/>
     
     <IoMdSearch className='text-4xl mr-2 my-8-[50px] w-[50px] p-[6px] rounded-full bg-blue-400'/>
     </div>
