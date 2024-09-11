@@ -60,8 +60,8 @@ export default function Footer() {
     </div>
     </div>
 
-   <div className='flex justify-center hover:text-blue-900'>
-    <p>&copy; SmartOptions Property Solutions <br />{(new Date('01-01-2019').getFullYear())} - {(new Date().getFullYear())}</p>
+   <div className='flex justify-center text-center hover:text-blue-900'>
+    <p> SmartOptions Property Solutions <br />&copy; {(new Date('01-01-2019').getFullYear())} - {(new Date().getFullYear())}</p>
     </div>
 
    </footer>
