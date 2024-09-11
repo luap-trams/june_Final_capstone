@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link';
-import MobileNav from './MobileNav';
+
 import { useContext } from 'react';
 import { SidebarContext } from '../providers';
 import Image from 'next/image';
@@ -11,7 +11,7 @@ export default function Navibar() {
     
     <nav>
         {/* <ul className=' flex justify-around uppercase items-center h-40 bg-green-400 text-white text-sm tracking-wider'></ul> */}
-        <ul className='flex justify-around uppercase items-center h-40 bg-blue-900 text-white text-sm tracking-wider'>
+        <ul className='hidden md:flex justify-around uppercase items-center h-40 bg-blue-900 text-white text-sm tracking-wider'>
         <Image src={'/smartoptions2.webp'} alt={'white logo'} width={'100'} height={'100'} className='flex justify-items-end' />
             <Link href={'/'}> 
                 <li className='bg-blue-900 h-8 w-34 px-3 py-1.5 rounded-full hover:bg-blue-500'>home</li>
@@ -33,7 +33,6 @@ export default function Navibar() {
             </Link>
 
         </ul>
-        <MobileNav />
         
      
     </nav>

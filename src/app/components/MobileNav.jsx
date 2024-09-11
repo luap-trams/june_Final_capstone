@@ -1,5 +1,5 @@
 'use client'
-import {GiHamburgerMenu} from 'react-icons/gi'
+import { GiHamburgerMenu } from 'react-icons/gi'
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -7,43 +7,49 @@ export default function MobileNav() {
     const [open, setOpen] = useState(false)
     const [val, setVal] = useState(10)
 
-    function changeVal(){
+    function changeVal() {
         setVal((prev) => prev + 20);
     }
-    function controlNav(){
+
+    function controlNav() {
         setOpen(!open);
     }
 
- return (
-    <nav>
-        <ul className='flex items-center justify-around md:hidden h-36'>
-            <li>Home</li>
-            <li onClick={controlNav} className='cursor-pointer'><GiHamburgerMenu />
-            </li>
+    return (
+        <nav className='relative'>
 
-        </ul>
-        {open && (
-            <ul className='flex flex-col justify-around md:hidden items-end h-72 pr-32'>
-                <Link href={'/'}>
-                    <li>home</li>
-                </Link>
-                <Link href={'/about'}>
-                    <li>about</li>
-                </Link>
-                <Link href={'/contact'}>
-                    <li>contact</li>
-                </Link>
-                <Link href={'/properties'}>
-                    <li>properties listing</li>
-                </Link>
-                <Link href={'/help'}>
-                    <li>help</li>
-                </Link>
+            {/* Mobile Nav: Shown only on mobile screens */}
 
-                    <li>{val}</li>
-                    <li onClick={changeVal}>increase</li>
+            <ul className='md:hidden flex items-center justify-between h-24 bg-black text-white p-4 '>
+                <li className='text-xl'>Home</li>
+                <li onClick={controlNav} className='cursor-pointer'>
+                    <GiHamburgerMenu size={24} />
+                </li>
             </ul>
-        )}
-    </nav>
-        );
+
+            {/* Dropdown Menu: Shown only on mobile screens when open */}
+            
+            {open && (
+                <ul className='md:hidden flex flex-col justify-around items-end bg-blue-400 bg-transparent text-white absolute top-16 right-0 w-auto p-4 '>
+                    <Link href={'/'}>
+                        <li className='py-2 hover:text-blue-900'>Home</li>
+                    </Link>
+                    <Link href={'/about'}>
+                        <li className='py-2 hover:text-blue-900'>About</li>
+                    </Link>
+                    <Link href={'/contact'}>
+                        <li className='py-2 hover:text-blue-900'>Contact</li>
+                    </Link>
+                    <Link href={'/prop'}>
+                        <li className='py-2 hover:text-blue-900'>Property Directory</li>
+                    </Link>
+                    <Link href={'/help'}>
+                        <li className='py-2 hover:text-blue-900'>Help</li>
+                    </Link>
+                    <li className='py-2 hover:text-blue-900'>Value: {val}</li>
+                    <li onClick={changeVal} className='cursor-pointer py-2 hover:text-blue-900'>Increase</li>
+                </ul>
+            )}
+        </nav>
+    );
 }

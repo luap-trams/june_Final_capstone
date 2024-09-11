@@ -11,11 +11,11 @@ import Image from 'next/image';
 export default function layout() {
   return (
 
-    <div  className='grid grid-cols-4 p-5 flex-wrap justify-center bg-blue-300 gap-10'>
+    <div  className='grid grid-cols-3 p-5 flex-wrap justify-center bg-blue-300 gap-10'>
         {/* <div>
           <Image src={'/aboutcover.jpeg'} alt={'about cover'} width={'1400'} height={'1400'} className='rounded-lg '/>
         </div> */}
-      <div className='bg-blue-400 p-5'>
+      <div className='bg-blue-400 p-5 col-span-3'>
         <h1>About Us</h1>
 
         <h2>Welcome to SmartOptions Property Solutions Limited!</h2>
