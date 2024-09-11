@@ -8,7 +8,7 @@ import "@fontsource/roboto/latin-500.css";
 export default function Home() {
   return (
     // <div className='bg-amber-600 h-screen text-white flex flex-row justify-center items-center text-6xl'>
-  <div className='text-center'>
+  <div className='flex justify-center text-center'>
       
 
           <p className='text-8xl py-20 inline-flex justify-center text-center text-blue-900 font-bold'>Unlock the door to your dream home</p>
