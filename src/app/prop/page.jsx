@@ -31,7 +31,7 @@ export default function PropertyPage() {
     <>
     {/* <div className='flex items-center justify-between p-3 border-4 rounded-full mt-4 border-blue-400 bg-white w-full sm:w-3/4 md:w-1/2 lg:w-2/5 xl:w-1/3 m-auto'></div> */}
     
-    <div className='flex items-center justify-between p-3 border-2 rounded-full mt-4 border-none bg-white w-full max-sm:w-3/4 md:w-1/2 lg:w-2/5 xl:w-1/3 m-auto'>
+    <div className='flex items-center justify-between p-3 border-2 rounded-full mt-4 border-none bg-white w-3/4 max-sm:w-3/4 md:w-1/2 lg:w-2/5 xl:w-1/3 m-auto'>
     
     <input type="text" name='search' id='search' className='outline-none block w-4/5 text-xl' placeholder='Search available properties…' defaultValue={searchProp} onChange={(e)=>filterSearch(e)} style={{ backgroundColor: 'transparent'}}/>
     

@@ -48,7 +48,7 @@ export default function MobileNav() {
                         <li className='py-2 hover:text-blue-900'>Contact</li>
                     </Link>
                     <Link href={'/prop'}>
-                        <li className='py-2 hover:text-blue-900'>Property Directory</li>
+                        <li className='py-2 hover:text-blue-900'>Listing</li>
                     </Link>
                     <Link href={'/help'}>
                         <li className='py-2 hover:text-blue-900'>Help</li>
