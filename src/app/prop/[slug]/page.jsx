@@ -24,7 +24,7 @@ export default function PropDetails({params}) {
     <PropertyCard title={card.title} type={card.type} rating={card.rating}/>
   </Link>)
   return (
-    <div>
+    <div className='text-center'>
         <h1>{details.title}</h1>
         <p>{details.description}</p>
         <p>{details.image}</p>
