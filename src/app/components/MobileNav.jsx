@@ -2,6 +2,7 @@
 import { GiHamburgerMenu } from 'react-icons/gi'
 import Link from 'next/link'
 import { useState } from 'react'
+import Image from 'next/image'
 
 export default function MobileNav() {
     const [open, setOpen] = useState(false)
@@ -16,12 +17,18 @@ export default function MobileNav() {
     }
 
     return (
-        <nav className='relative'>
+        <nav>
 
             {/* Mobile Nav: Shown only on mobile screens */}
 
             <ul className='md:hidden flex items-center justify-between h-24 bg-black text-white p-4 '>
-                <li className='text-xl'>Home</li>
+                <li className='text-xl'>
+                    <a href="/">
+                        <Image src="/home_icons_white.png" alt="logo" width={40} height={40} />
+                    </a>
+                </li>
+
+                
                 <li onClick={controlNav} className='cursor-pointer'>
                     <GiHamburgerMenu size={24} />
                 </li>
@@ -30,7 +37,7 @@ export default function MobileNav() {
             {/* Dropdown Menu: Shown only on mobile screens when open */}
             
             {open && (
-                <ul className='md:hidden flex flex-col justify-around items-end bg-blue-400 bg-transparent text-white absolute top-16 right-0 w-auto p-4 '>
+                <ul className='md:hidden flex flex-col justify-around items-end bg-blue-400 text-white absolute top-16 right-0 w-auto p-4 '>
                     <Link href={'/'}>
                         <li className='py-2 hover:text-blue-900'>Home</li>
                     </Link>

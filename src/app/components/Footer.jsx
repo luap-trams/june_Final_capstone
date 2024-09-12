@@ -11,8 +11,13 @@ export default function Footer() {
     <div className='font-thin'>
       <h1 className='text-2xl py-5 hover:text-blue-900 uppercase font-bold'>home office</h1>
       <p>256, Mercure Crescent,  <br />Off Shitta Adetola Road, <br />Ojota - Lagos Nigeria</p>
-      <p className='lowercase'>luap.trams@gmail.com</p>
-      <p>+234 907 000 0007</p>
+      <p> <a href="mailto:luap.trams@gmail.com" className="text-white hover:underline lowercase">
+      luap.trams@gmail.com</a>
+    </p>
+      <p>
+        <a href="tel:+2349070000007" className="text-white hover:underline">
+      +234 907 000 0007</a>
+      </p>
     </div>
     
     <div className='font-thin my-5'>
@@ -41,7 +46,7 @@ export default function Footer() {
       <p>Github</p>
       </Link>
       
-      <Link href={'https://www.linkedin.com/in/paul-s-736b0444/'}className='hover:text-blue-400'>
+      <Link href={'https://www.linkedin.com/in/paul-s-736b04444/'}className='hover:text-blue-400'>
       <p>LinkedIn</p>
       </Link>
 
