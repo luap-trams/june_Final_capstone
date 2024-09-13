@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="bg-blue-200">
+    <html lang="en" className="bg-blue-200 w-screen">
       <body className={inter.className}>
         <SidebarProvider>
           <MobileNav />

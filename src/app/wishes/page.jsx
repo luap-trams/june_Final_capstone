@@ -15,7 +15,7 @@ export default function WishesPage() {
             :
             (
                 <div>
-                    <table className="w-4/5 m-auto">
+                    <table className="w-4/5 m-auto place-items-center">
                     <thead>
                         <tr>
 
@@ -26,11 +26,12 @@ export default function WishesPage() {
                     </thead>
                     <tbody>
                     {propItem.map((prop, index) => (
-                        <tr key={index}>
+                        <tr key={index} className="text-center">
 
-                        <td><Image src={`/images/${prop.title.split(' ').join('')}.jpeg`} alt={prop.title} width={'150'} height={'200'} /></td>
+                        <td className="flex justify-center"><Image src={`/images/${prop.title.split(' ').join('')}.jpeg`} alt={prop.title} width={'150'} height={'200'} /></td>
                         <td>{prop.title}</td>
                         <td>{prop.type}</td>
+                        <td>{prop.description}</td>
 
                     </tr>
                     ))
