@@ -14,19 +14,19 @@ export default function PropDetails({params}) {
 
     function handlePropAdd(){
       setVal(prev => prev + 1)
-      setPropItem([...propItem, {title: details.title, typ: details.type}])
+      setPropItem([...propItem, {title: details.title, type: details.type}])
     }
 
 
     const relatedProp = properties.filter((card => card.category == details.category && details.title !== card.title))
 
     const relatedCard = relatedProp.map((card, index) => <Link href={`/prop/${card.title.split(' ').join('-')}`} title={card.title} className='cursor-pointer' key={index}>
-    <PropertyCard title={card.title} type={card.type} rating={card.rating}/>
+    <PropertyCard title={card.title} type={card.type} rating={card.rating} category={card.category}/>
   </Link>)
   return (
     <div className='text-center'>
         <h1>{details.title}</h1>
-        <p>{details.description}</p>
+        <p className='flex place-items-center flex-nowrap mx-auto p-5 bg-transparent h-1/3 w-1/3'>{details.description}</p>
         <p>{details.image}</p>
         <button onClick={handlePropAdd} className='bg-blue-900 text-white p-3 rounded-md'>add property</button>
 
