@@ -19,9 +19,9 @@ export default function MobileNav() {
     return (
         <nav>
 
-            {/* Mobile Nav: Shown only on mobile screens */}
+            {/* //Mobile Nav: md:hidden means it would only be shown on mobile screens// */}
 
-            <ul className='md:hidden flex items-center justify-between h-24 bg-black text-white p-4 '>
+            <ul className='md:hidden flex items-center justify-between h-24 bg-black text-white p-4'>
                 <li className='text-xl'>
                     <a href="/">
                         <Image src="/home_icons_white.png" alt="logo" width={40} height={40} />
@@ -34,7 +34,7 @@ export default function MobileNav() {
                 </li>
             </ul>
 
-            {/* Dropdown Menu: Shown only on mobile screens when open */}
+            {/* Dropdown Menu: Same as above. Shown only on mobile screens when open */}
             
             {open && (
                 <ul className='md:hidden flex flex-col justify-around items-end bg-blue-400 text-white absolute top-16 right-0 w-auto p-4 '>

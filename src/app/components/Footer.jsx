@@ -2,8 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 export default function Footer() {
   return (
-   <footer className='h-80 bg-black text-white text-lg w-screen'>
-    <div className='flex justify-around capitalize items-center'>
+   <footer className='h-80 bg-black text-white text-lg w-full'>
+    <div className='flex justify-around capitalize items-center w-full mx-auto'>
         <div>
             <h1 className='text-3xl text-center text-blue-400'>SMARTOPTIONS <br /> <span className='text-xl -m-px'>Property Solutions</span></h1>
           </div>
