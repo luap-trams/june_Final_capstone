@@ -3,6 +3,7 @@ import React from 'react'
 
 export default function ContactPage() {
   return (
+
     <div className='h-screen w-full bg-blue-400 text-center flex flex-col justify-evenly px-16 py-16'>
     {/* <div className={smart.luap}>
         <h1 className={`${smart.smart} bg-gradient-to-br from via-red-700 to-green-600`}>Get in touch with us</h1>
@@ -29,8 +30,33 @@ export default function ContactPage() {
     
     
     
-    </div>
+    {/* </div>
 
+<div className='flex flex-col h-screen justify-around w-screen text-center mx-auto'>
+  
+      <div className='flex justify-center text-6xl text-white text-center uppercase font-medium'>
+          <h1>get in touch with us</h1>
+      </div>
+    
+    <div className='h-1/2 w-1/4 flex flex-row justify-center mx-auto gap-14'>
+        
+        <div className='bg-blue-300 text-center p-12 rounded-3xl'>
+          <h2 className='text-2xl my-2'>Talk to a member of our sales team</h2>
+          <p>We'll love to connect with you to learn more about what you have to say</p>
+          <input type="button" value="contact sales" className='bg-black text-white hover:bg-blue-900 py-2 px-2 rounded-xl my-5 w-48 capitalize' />
+        </div>
+
+        <div className='bg-blue-300 text-center py-12 px-12 rounded-3xl'>
+          <h2 className='text-2xl my-2'>Talk to a member of our support team</h2>
+          <p>We'll love to connect with you to learn more about what you have to say</p>
+          <input type="button" value="contact support" className='bg-black text-white hover:bg-blue-900 py-2 px-2 rounded-xl my-5 w-48 capitalize'/>
+        </div>
+
+    </div> */}
+    
+    
+    
+    </div>
 
 
   )

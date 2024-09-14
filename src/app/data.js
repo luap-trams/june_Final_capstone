@@ -10,7 +10,7 @@ export const properties = [
     location: "Ikoyi, Lagos",
     price: '₦30,000,000', // In Naira
     status: "Available",
-    rating: 2.5
+    rating: 5
   },
   {
     title: "Luxury Villa In Blue Island",
@@ -32,7 +32,7 @@ export const properties = [
     location: "Victoria Island, Lagos",
     price: '₦4,000,000,000',
     status: "Available",
-    rating: 1.5
+    rating: 4.5
   },
   {
     title: "Family Home In Surulere",

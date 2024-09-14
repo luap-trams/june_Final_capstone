@@ -1,11 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 export default function Footer() {
   return (
    <footer className='h-80 bg-black text-white text-lg w-full'>
     <div className='flex justify-around capitalize items-center w-full mx-auto'>
         <div>
-            <h1 className='text-3xl text-center text-blue-400'>SMARTOPTIONS <br /> <span className='text-xl -m-px'>Property Solutions</span></h1>
+        <Image src={'/logo_name.jpeg'} alt={'white logo'} width={'200'} height={'200'} className='mx-auto'/>
+            <h1 className='text-sm text-center text-blue-400'>Property Solutions</h1>
           </div>
 
     <div className='font-thin'>
