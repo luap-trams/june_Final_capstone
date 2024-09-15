@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import Link from 'next/link'
 import { useState } from 'react'
 import Image from 'next/image'
+import { MdHome } from 'react-icons/md';
 
 export default function MobileNav() {
     const [open, setOpen] = useState(false)
@@ -24,7 +25,7 @@ export default function MobileNav() {
             <ul className='md:hidden flex items-center justify-between h-24 bg-black text-white p-4'>
                 <li className='text-xl'>
                     <a href="/">
-                        <Image src="/home_icons_white.png" alt="logo" width={40} height={40} />
+                        <MdHome size={50} color="white" />
                     </a>
                 </li>
 
