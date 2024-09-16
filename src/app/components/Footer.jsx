@@ -6,7 +6,7 @@ import { FaLinkedin, FaInstagram, FaFacebook, FaGithub, FaTiktok } from 'react-i
 
 export default function Footer() {
   return (
-   <footer className='h-32 bg-black text-white text-lg mx-auto'>
+   <footer className='h-32 bg-black text-white text-sm md:text-lg mx-auto'>
     <div className='flex justify-around w-full'>
         
         <div className='mt-7'>
