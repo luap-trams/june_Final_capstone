@@ -3,14 +3,15 @@ export const properties = [
 
   {
     title: "Penthouse In Ikoyi",
-    // images:["/ab001.jpeg","/ab001.jpeg","/ab001.jpeg"],
+    images:["/images/CommercialSpaceInIkeja.jpeg","/images/DetachedHouseInGbagada.jpeg","/images/PenthouseInIkoyi.jpeg"],
     description: "Exclusive penthouse with panoramic city views, private pool, and spa-like bathrooms.",
     category: "Apartment",
     type: "For Sale",
     location: "Ikoyi, Lagos",
     price: '₦30,000,000', // In Naira
     status: "Available",
-    rating: 5
+    rating: 5,
+    features: ["3 Bedrooms", "2 Bathrooms", "Swimming Pool", "Large Garden", "Garage"]
   },
   {
     title: "Luxury Villa In Blue Island",
