@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import Image from 'next/image'
 import { MdHome } from 'react-icons/md';
+import { FaHeart } from 'react-icons/fa';
 
 export default function MobileNav() {
     const [open, setOpen] = useState(false)
@@ -54,7 +55,7 @@ export default function MobileNav() {
                     <Link href={'/help'}>
                         <li className='py-2 hover:text-blue-900'>Help</li>
                     </Link>
-                    <li className='py-2 hover:text-blue-900'>wishlist{val}</li>
+                    <li className='py-2 hover:text-blue-900'><FaHeart /> {val}</li>
                     <li onClick={changeVal} className='cursor-pointer py-2 hover:text-blue-900'>Increase</li>
                 </ul>
             )}

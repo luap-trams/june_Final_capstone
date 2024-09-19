@@ -2,9 +2,15 @@
 import { useContext } from "react"
 import { SidebarContext } from "../providers"
 import Image from "next/image"
+import { FaHeart } from 'react-icons/fa';
 
 export default function WishesPage() {
-    const { propItem } = useContext(SidebarContext)
+    const { propItem, setPropItem } = useContext(SidebarContext)
+
+    const handleRemoveWish = (title) => {
+        const updatedList = propItem.filter(prop => prop.title !== title);
+        setPropItem(updatedList); 
+    }
 
     return (
         <div>
@@ -21,6 +27,7 @@ export default function WishesPage() {
 
                             <th>images</th>
                             <th>title</th>
+                            <th>type</th>
                             <th>description</th>
                         </tr>
                     </thead>
@@ -32,6 +39,12 @@ export default function WishesPage() {
                         <td>{prop.title}</td>
                         <td>{prop.type}</td>
                         <td>{prop.description}</td>
+                        
+                        <td>
+                                <button onClick={() => handleRemoveWish(prop.title)} className="text-red-500">Delete
+                                    {/* <FaHeart /> Heart Icon */}
+                                </button>
+                            </td>
 
                     </tr>
                     ))

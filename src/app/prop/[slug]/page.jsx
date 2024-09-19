@@ -6,6 +6,7 @@ import PropertyCard from '@/app/components/PropertyCard'
 import { useContext } from 'react'
 import { SidebarContext } from "@/app/providers"
 import { FaCheck } from 'react-icons/fa';
+import { FaHeart } from 'react-icons/fa';
 
 export default function PropDetails({params}) {
 
@@ -51,9 +52,10 @@ const featureList = details.features?.map((feature, index) => (
               </ul>
       </div>
 
-        
-        <button onClick={handlePropAdd} className='bg-blue-900 text-white p-3 rounded-md m-2'>add property</button>
-
+        <div className='flex justify-center items-center mx-auto'>
+        {/* <button onClick={handlePropAdd} className='bg-blue-900 text-white p-3 rounded-md m-2'>add property</button> */}
+        <button onClick={handlePropAdd} className='bg-blue-900 text-blue-300 text-2xl p-1.5 rounded-md m-2 h-10 w-22 px-8 '><FaHeart /></button>
+        </div>
             <div>
               <h2 className='text-4xl font-bold p-2'>Related properties</h2>
 

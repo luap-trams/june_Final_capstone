@@ -15,14 +15,20 @@ export const properties = [
   },
   {
     title: "Luxury Villa In Blue Island",
-    // images:["/ab002.jpeg","/ab002.jpeg","/ab002.jpeg"],
+    images:["/images/DetachedHouseInGbagada.jpeg","/images/PenthouseInIkoyi.jpeg","/images/CommercialSpaceInIkeja.jpeg"],
     description: "Well-equipped office space with ample natural light, high-speed internet, and meeting rooms.",
     category: "Office",
     type: "For Rent",
     location: "Lekki Phase 1, Lagos",
     price: '₦1,500,000', // Monthly rent
     status: "Available",
-    rating: 3.5
+    rating: 3.5,
+    features: ["Concrete floor",
+      "Dining area",
+      "Family Lounge",
+      "Fitted Kitchen",
+      "Interlocked Streets",
+      "Modern Structure"]
   },
   {
     title: "Penthouse In Victoria Island",
