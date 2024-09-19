@@ -54,7 +54,7 @@ export default function MobileNav() {
                     <Link href={'/help'}>
                         <li className='py-2 hover:text-blue-900'>Help</li>
                     </Link>
-                    <li className='py-2 hover:text-blue-900'>Value: {val}</li>
+                    <li className='py-2 hover:text-blue-900'>wishlist{val}</li>
                     <li onClick={changeVal} className='cursor-pointer py-2 hover:text-blue-900'>Increase</li>
                 </ul>
             )}

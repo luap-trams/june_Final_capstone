@@ -22,7 +22,7 @@ export default function PropertyLists() {
         {/* <PropertyCard title="Penthouse In Ikoyi" type="Miniflat" pri="500,000"/> */}
     </div>
     <p className='flex items-center justify-center my-7'>
-    <Link href={'/prop'} ><span className='bg-black text-white rounded-3xl p-3 uppercase'>view more properties</span>
+    <Link href={'/prop'} ><span className='bg-black text-white rounded-3xl p-3 uppercase text-sm hover:bg-blue-900'>view more properties</span>
     </Link>
     </p>
     </>

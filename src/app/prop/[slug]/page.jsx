@@ -5,6 +5,7 @@ import Link from 'next/link'
 import PropertyCard from '@/app/components/PropertyCard'
 import { useContext } from 'react'
 import { SidebarContext } from "@/app/providers"
+import { FaCheck } from 'react-icons/fa';
 
 export default function PropDetails({params}) {
 
@@ -25,11 +26,11 @@ export default function PropDetails({params}) {
   </Link>);
 
 const otherImages = details.images?.map((image, index) => (
-  <img src={image} alt={`${details.title} image ${index + 1}`} className='rounded-md mx-auto p-1' key={index} />
+  <img src={image} alt={`${details.title} image ${index + 1}`} className='rounded-sm mx-auto p-1' key={index} />
 ));
 
 const featureList = details.features?.map((feature, index) => (
-  <li key={index}>{feature}</li>
+  <li key={index}><FaCheck className='md:inline-flex mb-2.5 gap-5 mt-2 mx-1 p-0.5 rounded-sm bg-blue-400  text-white' />{feature}</li>
 ));
 
 
@@ -42,9 +43,9 @@ const featureList = details.features?.map((feature, index) => (
         </div>
         <p className='flex place-items-center flex-nowrap mx-auto p-5 bg-transparent h-1/3 w-1/3'>{details.description}</p>
         {/* <img src={details.images[0]} alt={details.title} className="w-1/3 mx-auto" /> */}
-        <div className='features-list'>
+        <div className='features-list '>
             <h2 className='text-lg font-bold'>Features</h2>
-              <ul className='md:inline-flex gap-5 mx-auto'>
+              <ul className='md:flex justify-center gap-5 mx-auto'>
 
                 {featureList}
               </ul>

@@ -43,7 +43,7 @@ export default function Footer() {
       {/* <Link href={'https://www.linkedin.com/in/paul-s-736b04444/'}className='hover:text-blue-400'>
       <p>LinkedIn</p></Link> */}
 
-      <a href='https://www.linkedin.com/in/paul-s-736b04444/' target="_blank" rel="noopener noreferrer" className='hove:text-blue-400'>
+      <a href='https://www.linkedin.com/in/paul-s-736b0444/' target="_blank" rel="noopener noreferrer" className='hove:text-blue-400'>
         <FaLinkedin size={30} color="#0e76a8" />
       </a>
 
