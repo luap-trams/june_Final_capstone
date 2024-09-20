@@ -9,8 +9,8 @@ import { SidebarProvider } from "./providers"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "My real estate app",
-  description: "A Real Estate Application",
+  title: "SmartOptions Property Solutions",
+  description: "Smart solutions for every property need.",
 };
 
 export default function RootLayout({ children }) {
