@@ -29,7 +29,7 @@ export default function Navibar() {
                 <li className='bg-blue-900 h-8 w-34 px-3 py-1.5 rounded-full hover:bg-blue-500'>contact us</li>
             </Link>
             <Link href={'/wishes'}> 
-                <li className='bg-blue-500 h-14 w-42 px-2 py-3 rounded-full hover:text-black text-center'><FaHeart /> 
+                <li className='bg-blue-500 h-14 w-42 px-2 py-3 rounded-full hover:text-red-500 text-center'><FaHeart /> 
                     {val}</li>
             </Link>
 
