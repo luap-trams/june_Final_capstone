@@ -8,14 +8,14 @@ export const metadata = {
 
 import React from 'react'
 import Image from 'next/image';
-export default function layout() {
+export default function layout( {children} ) {
   return (
 
-    <div  className='xsm:grid grid-cols-1 p-5 justify-center bg-blue-300 gap-10  md:grid-cols-2 lg:grid-cols-3'>
+    <div > { children }
         {/* <div>
           <Image src={'/aboutcover.jpeg'} alt={'about cover'} width={'1400'} height={'1400'} className='rounded-lg '/>
         </div> */}
-      <div className='bg-blue-400 p-5'>
+      {/* <div className='bg-blue-400 p-5'>
         <h1>About Us</h1>
 
         <h2>Welcome to SmartOptions Property Solutions Limited!</h2>
@@ -58,7 +58,7 @@ export default function layout() {
 
 
 
-</div>
+</div> */}
 
 
 

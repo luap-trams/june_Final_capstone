@@ -2,9 +2,9 @@ export const properties = [
 
 
   {
-    title: "Penthouse In Ikoyi",
-    images:["/images/CommercialSpaceInIkeja.jpeg","/images/DetachedHouseInGbagada.jpeg","/images/PenthouseInIkoyi.jpeg"],
-    description: "Exclusive penthouse with panoramic city views, private pool, and spa-like bathrooms.",
+    title: "Penthouse In Lekki",
+    images:["/images/CommercialSpaceInIkeja.jpeg","/images/DetachedHouseInGbagada.jpeg","/images/PenthouseInLekki.jpeg"],
+    description: "This exquisite penthouse offers an unparalleled living experience in one of Lagos' most prestigious neighborhoods. Nestled within a secure gated community, the property boasts stunning panoramic views of the city and ocean.",
     category: "Apartment",
     type: "For Sale",
     location: "Ikoyi, Lagos",
@@ -15,14 +15,14 @@ export const properties = [
   },
   {
     title: "Luxury Villa In Blue Island",
-    images:["/images/DetachedHouseInGbagada.jpeg","/images/PenthouseInIkoyi.jpeg","/images/CommercialSpaceInIkeja.jpeg"],
+    images:["/images/DetachedHouseInGbagada.jpeg","/images/luxuryVillaInBlueIsland.jpeg","/images/CommercialSpaceInIkeja.jpeg"],
     description: "Well-equipped office space with ample natural light, high-speed internet, and meeting rooms.",
     category: "Office",
     type: "For Rent",
     location: "Lekki Phase 1, Lagos",
     price: '₦1,500,000', // Monthly rent
     status: "Available",
-    rating: 3.5,
+    rating: 4.5,
     features: ["Concrete floor",
       "Dining area",
       "Family Lounge",
