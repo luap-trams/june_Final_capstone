@@ -15,7 +15,7 @@ export const properties = [
   },
   {
     title: "Luxury Villa In Blue Island",
-    images:["/images/DetachedHouseInGbagada.jpeg","/images/luxuryVillaInBlueIsland.jpeg","/images/CommercialSpaceInIkeja.jpeg"],
+    images:["/images/DetachedHouseInGbagada.jpeg","/images/LuxuryVillaInBlueIsland.jpeg","/images/CommercialSpaceInIkeja.jpeg"],
     description: "Well-equipped office space with ample natural light, high-speed internet, and meeting rooms.",
     category: "Office",
     type: "For Rent",
