@@ -41,7 +41,7 @@ export default function WishesPage() {
                         <td>{prop.description}</td>
                         
                         <td>
-                                <button onClick={() => handleRemoveWish(prop.title)} className="text-red-500">Delete
+                                <button onClick={() => handleRemoveWish(prop.title)} className="text-red-500 rounded-md p-1 text-sm border-2 border-red-500">Delete
                                     {/* <FaHeart /> Heart Icon */}
                                 </button>
                             </td>

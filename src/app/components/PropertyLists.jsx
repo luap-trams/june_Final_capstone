@@ -17,7 +17,7 @@ export default function PropertyLists() {
   return (
     <>
 
-    <div className='grid md:grid-cols-3 gap-4 px-4 capitalize'>
+    <div className='grid md:grid-cols-3 gap-4 px-4 capitalize h-full rounded-sm'> {/* TOP PICKS*/}
     {cards}
         {/* <PropertyCard title="Penthouse In Ikoyi" type="Miniflat" pri="500,000"/> */}
     </div>

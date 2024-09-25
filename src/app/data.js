@@ -31,19 +31,8 @@ export const properties = [
       "Modern Structure"]
   },
   {
-    title: "Penthouse In Victoria Island",
-    // images: ["/ab003.jpeg","/ab003.jpeg","/ab003.jpeg"],
-    description: "Spacious penthouse with rooftop terrace, gym, and infinity pool.",
-    category: "Apartment",
-    type: "For Sale",
-    location: "Victoria Island, Lagos",
-    price: '₦4,000,000,000',
-    status: "Available",
-    rating: 4.5
-  },
-  {
     title: "Family Home In Surulere",
-    // images:["/ab004.jpeg", "/ab004.jpeg", "/ab004.jpeg"],
+    images:["/images/MiniflatInOjota.jpeg", "/images/StudioApartmentInShomolu.jpeg", "/images/StudioApartmentInYaba.jpeg"],
     description: "Experience the epitome of luxury living in this exclusive penthouse, offering breathtaking panoramic views of the city skyline. This residence features a private rooftop pool, perfect for relaxing or entertaining, and expansive terraces that provide seamless indoor-outdoor living. Indulge in the spa-inspired bathrooms, complete with marble finishes, rainfall showers, and deep soaking tubs, designed to offer the ultimate retreat. The spacious, open-concept living areas are flooded with natural light, highlighting the sleek modern design and high-end finishes throughout. A true urban oasis, this penthouse combines sophistication with unparalleled comfort and privacy.",
     category: "House",
     type: "For Rent",
@@ -52,6 +41,17 @@ export const properties = [
     status: "Available",
     rating: 4.5
   },
+  {
+    title: "Spacious 3 Bed Apartment",
+      images: ["/images/Spacious3BedApartmentInAGatedEstate1.jpeg","/images/Spacious3BedApartmentInAGatedEstate2.jpeg","/images/Spacious3BedApartmentInAGatedEstate3.jpeg"],
+      description: "Spacious penthouse with rooftop terrace, gym, and infinity pool.",
+      category: "Apartment",
+      type: "For Sale",
+      location: "Victoria Island, Lagos",
+      price: '₦4,000,000,000',
+      status: "Available",
+      rating: 4.5
+    },
   {
     title: "Commercial Space In Opebi",
     // images:["//ab005.jpeg", "//ab005.jpeg", "//ab005.jpeg"],
@@ -138,7 +138,7 @@ export const properties = [
     rating: 4.5
   },
   {
-    title: "Penthouse In Ikoyi",
+    title: "Penthouse In Lekki",
     // images:["/ab013.jpeg", "/ab013.jpeg", "/ab013.jpeg"],
     description: "Spacious penthouse with rooftop terrace, gym, and infinity pool.",
     category: "Apartment",
