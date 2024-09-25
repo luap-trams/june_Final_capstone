@@ -20,7 +20,7 @@ export default function PropertyCard({ rating, title, type, description, categor
       <p className=' bg-blue-400 p-1 rounded-lg'>{type}</p>
       </div>
       <p className='text-gray-700 mt-2'>{description}</p>
-      <p className='text-lg font-bold text-blue-700 mt-2'>{price}</p>
+      <p className='text-lg font-bold text-blue-700 mb-3'>{price}</p>
     </div>
   );
 }
