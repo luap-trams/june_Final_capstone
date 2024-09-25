@@ -19,7 +19,7 @@ export default function PropertyPage() {
     const cards = filterLists.length == 0 ?(
       <h1 className='flex items-center justify-center w-screen'>Oops, No results found. Explore other options or contact us for assistance.</h1>
     ) : filterLists.map((card,index) => (
-      <section key={index}>
+      <section key={index} className='rounded-lg shadow-2xl'>
       
       <Link href={`/prop/${card.title.split(' ').join('-')}`} title={card.title} className='cursor-pointer'>
         <PropertyCard title={card.title} category={card.category} type={card.type} price={card.price} rating={card.rating}/>

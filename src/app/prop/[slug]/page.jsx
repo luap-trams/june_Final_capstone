@@ -27,7 +27,7 @@ export default function PropDetails({params}) {
   </Link>);
 
 const otherImages = details.images?.map((image, index) => (
-  <img src={image} alt={`${details.title} image ${index + 1}`} className='rounded-sm mx-auto p-1' key={index} />
+  <img src={image} alt={`${details.title} image ${index + 1}`} className='rounded-lg shadow-2xl mx-auto p-1' key={index} />
 ));
 
 const featureList = details.features?.map((feature, index) => (
@@ -36,7 +36,7 @@ const featureList = details.features?.map((feature, index) => (
 
 
   return (
-    <div className='text-center'>
+    <div className='text-center rounded-md'>
         <h1 className='md:text-2xl'>{details.title}</h1>
         {/* <div className='flex justify-center mx-auto px-10 gap-x-8'> */}
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>

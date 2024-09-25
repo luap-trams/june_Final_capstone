@@ -6,7 +6,7 @@ export default function PropertyCard({ rating, title, type, description, categor
   return (
     // Images Displayed in Flex-cols-3 for the Property List Page where you can perform search function
     <div className='flex flex-col items-center'>
-      <Image src={`/images/${title.split(' ').join('')}.jpeg`} alt={title} width={'400'} height={'400'} className='rounded-md'/>
+      <Image src={`/images/${title.split(' ').join('')}.jpeg`} alt={title} width={'400'} height={'400'} className='rounded-t-md'/>
       {/* Material UI rating component */}
       
       <p className='m-3'>

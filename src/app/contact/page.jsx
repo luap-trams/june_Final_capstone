@@ -4,60 +4,34 @@ import React from 'react'
 export default function ContactPage() {
   return (
 
-    <div className='h-screen w-full bg-blue-400 text-center flex flex-col justify-evenly px-16 py-16'>
+
+    <div className='h-auto w-full text-center bg-blue-400  flex flex-col justify-evenly px-4 py-8 md:px-16 md:py-16'>
+      <h1 className='text-3xl md:text-5xl lg:text-6xl font-medium uppercase text-white'>
+        Get in touch with us
+      </h1>
+
+      <div className='flex flex-col md:flex-row gap-10 mt-10 place-content-center '>
+
+        {/* Sales */}
+        <div className='bg-blue-300 text-center py-8 px-8 rounded-3xl w-full md:w-1/3'>
+          <h2 className='text-xl md:text-2xl my-2'>Talk to a member of our sales team</h2>
+          <p className='text-sm md:text-base'>We'd love to connect with you to learn more about what you have to say.</p>
+          <input type="button" value="Contact Sales" className='bg-black text-white hover:bg-blue-900 py-2 px-4 rounded-xl my-5 w-48 capitalize' />
+        </div>
+
+        {/* Support */}
+        <div className='bg-blue-300 text-center py-8 px-8 rounded-3xl w-full md:w-1/3'>
+          <h2 className='text-xl md:text-2xl my-2'>Talk to a member of our support team</h2>
+          <p className='text-sm md:text-base'>We'd love to connect with you to learn more about what you have to say.</p>
+          <input type="button" value="Contact Support" className='bg-black text-white hover:bg-blue-900 py-2 px-4 rounded-xl my-5 w-48 capitalize'/>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+
+    // <div className='h-screen w-full bg-blue-400 text-center flex flex-col justify-evenly px-16 py-16'>
     {/* <div className={smart.luap}>
         <h1 className={`${smart.smart} bg-gradient-to-br from via-red-700 to-green-600`}>Get in touch with us</h1>
     </div> */}
-
-      <h1 className='text-6xl text-white text-center uppercase font-medium'>get in touch with us</h1>
-      
-    
-    <div className='h-70 w-auto flex flex-row flex-none place-content-center gap-20'>
-        
-        <div className='bg-blue-300 text-center py-12 px-12  rounded-3xl'>
-          <h2 className='text-2xl my-2'>Talk to a member of our sales team</h2>
-          <p>We'll love to connect with you to learn more about what you have to say</p>
-          <input type="button" value="contact sales" className='bg-black text-white hover:bg-blue-900 py-2 px-2 rounded-xl my-5 w-48 capitalize' />
-        </div>
-
-        <div className='bg-blue-300 text-center py-12 px-12 rounded-3xl'>
-          <h2 className='text-2xl my-2'>Talk to a member of our support team</h2>
-          <p>We'll love to connect with you to learn more about what you have to say</p>
-          <input type="button" value="contact support" className='bg-black text-white hover:bg-blue-900 py-2 px-2 rounded-xl my-5 w-48 capitalize'/>
-        </div>
-
-    </div>
-    
-    
-    
-    {/* </div>
-
-<div className='flex flex-col h-screen justify-around w-screen text-center mx-auto'>
-  
-      <div className='flex justify-center text-6xl text-white text-center uppercase font-medium'>
-          <h1>get in touch with us</h1>
-      </div>
-    
-    <div className='h-1/2 w-1/4 flex flex-row justify-center mx-auto gap-14'>
-        
-        <div className='bg-blue-300 text-center p-12 rounded-3xl'>
-          <h2 className='text-2xl my-2'>Talk to a member of our sales team</h2>
-          <p>We'll love to connect with you to learn more about what you have to say</p>
-          <input type="button" value="contact sales" className='bg-black text-white hover:bg-blue-900 py-2 px-2 rounded-xl my-5 w-48 capitalize' />
-        </div>
-
-        <div className='bg-blue-300 text-center py-12 px-12 rounded-3xl'>
-          <h2 className='text-2xl my-2'>Talk to a member of our support team</h2>
-          <p>We'll love to connect with you to learn more about what you have to say</p>
-          <input type="button" value="contact support" className='bg-black text-white hover:bg-blue-900 py-2 px-2 rounded-xl my-5 w-48 capitalize'/>
-        </div>
-
-    </div> */}
-    
-    
-    
-    </div>
-
-
-  )
-}
