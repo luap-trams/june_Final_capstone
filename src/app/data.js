@@ -32,7 +32,7 @@ export const properties = [
   },
   {
     title: "Family Home In Surulere",
-    images:["/images/MiniflatInOjota.jpeg", "/images/StudioApartmentInShomolu.jpeg", "/images/StudioApartmentInYaba.jpeg"],
+    images:["/images/MiniFlatInOjota.jpeg", "/images/StudioApartmentInShomolu.jpeg", "/images/StudioApartmentInYaba.jpeg"],
     description: "Experience the epitome of luxury living in this exclusive penthouse, offering breathtaking panoramic views of the city skyline. This residence features a private rooftop pool, perfect for relaxing or entertaining, and expansive terraces that provide seamless indoor-outdoor living. Indulge in the spa-inspired bathrooms, complete with marble finishes, rainfall showers, and deep soaking tubs, designed to offer the ultimate retreat. The spacious, open-concept living areas are flooded with natural light, highlighting the sleek modern design and high-end finishes throughout. A true urban oasis, this penthouse combines sophistication with unparalleled comfort and privacy.",
     category: "House",
     type: "For Rent",
