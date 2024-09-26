@@ -37,17 +37,19 @@ const featureList = details.features?.map((feature, index) => (
 
   return (
     <div className='text-center rounded-md'>
-        <h1 className='md:text-2xl'>{details.title}</h1>
+        <h1 className='md:text-2xl py-3'>{details.title}</h1>
         {/* <div className='flex justify-center mx-auto px-10 gap-x-8'> */}
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
           {otherImages}
         </div>
-        <p className='flex place-items-center flex-nowrap mx-auto p-5 bg-transparent h-1/3 w-1/3'>{details.description}</p>
-        {/* <img src={details.images[0]} alt={details.title} className="w-1/3 mx-auto" /> */}
-        <div className='features-list '>
-            <h2 className='text-lg font-bold'>Features</h2>
-              <ul className='md:flex justify-center gap-5 mx-auto'>
 
+        {/* Description, features and like button wrapped within a div to apply border */}
+        <div className=' shadow'>
+        <p className='w-full md:flex place-items-center flex-nowrap mx-auto p-5 bg-transparent md:w-1/2'>{details.description}</p>
+        {/* <img src={details.images[0]} alt={details.title} className="w-1/3 mx-auto" /> */}
+        <div className='features-list'>
+            <h2 className='text-lg font-bold'>Features</h2>
+              <ul className='flex-col md:inline-flex md:flex-row justify-center gap-5 mx-auto'>
                 {featureList}
               </ul>
       </div>
@@ -56,6 +58,8 @@ const featureList = details.features?.map((feature, index) => (
         {/* <button onClick={handlePropAdd} className='bg-blue-900 text-white p-3 rounded-md m-2'>add property</button> */}
         <button onClick={handlePropAdd} className='bg-blue-900 text-blue-300 text-2xl p-1.5 rounded-md m-2 h-10 w-22 px-8 '><FaHeart /></button>
         </div>
+
+      </div>
             <div>
               <h2 className='text-4xl font-bold p-2'>Related properties</h2>
 
