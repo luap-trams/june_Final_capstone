@@ -29,6 +29,7 @@ export default function WishesPage() {
                             <th>title</th>
                             <th>type</th>
                             <th>description</th>
+                            <th>actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -39,6 +40,7 @@ export default function WishesPage() {
                         <td>{prop.title}</td>
                         <td>{prop.type}</td>
                         <td>{prop.description}</td>
+                        
                         
                         <td>
                                 <button onClick={() => handleRemoveWish(prop.title)} className="text-red-500 rounded-md p-1 text-sm border-2 border-red-500">Delete

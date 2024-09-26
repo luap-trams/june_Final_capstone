@@ -16,7 +16,7 @@ export default function PropDetails({params}) {
 
     function handlePropAdd(){
       setVal(prev => prev + 1)
-      setPropItem([...propItem, {title: details.title, type: details.type}])
+      setPropItem([...propItem, {title: details.title, type: details.type, description: details.description}])
     }
 
 
