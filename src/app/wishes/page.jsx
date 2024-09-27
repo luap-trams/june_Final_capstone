@@ -21,14 +21,15 @@ export default function WishesPage() {
             :
             (
                 <div>
-                    <table className="w-4/5 m-auto place-items-center">
+                    <table className="w-full h-full m-auto place-items-center">
                     <thead>
-                        <tr>
+                        <tr className="capitalize">
 
                             <th>images</th>
                             <th>title</th>
                             <th>type</th>
                             <th>description</th>
+                            <th>price</th>
                             <th>actions</th>
                         </tr>
                     </thead>
@@ -40,6 +41,7 @@ export default function WishesPage() {
                         <td>{prop.title}</td>
                         <td>{prop.type}</td>
                         <td>{prop.description}</td>
+                        <td>{prop.price}</td>
                         
                         
                         <td>
