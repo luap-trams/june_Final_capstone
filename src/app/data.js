@@ -66,7 +66,7 @@ export const properties = [
       title: "Exotic 4 Bedroom Terrace",
         images: ["/images/Exotic4BedroomTerrace1.jpeg","/images/Exotic4BedroomTerrace2.jpeg","/images/Exotic4BedroomTerrace3.jpeg"],
         description: "This luxurious 4-bedroom terraced duplex offers a serene, trendy, and secure living experience. With a fully finished interior and easy access to transport links, the property boasts a spacious living area, a modern fully-fitted kitchen, and all en-suite bedrooms.",
-        category: "Terraced Duplex",
+        category: "Terrace Duplex",
         type: "For Sale",
         location: "Osapa London, Lekki, Lagos",
         price: '₦395,000,000',
