@@ -39,19 +39,68 @@ export const properties = [
     location: "Surulere, Lagos",
     price: '₦250,000', // Monthly rent
     status: "Available",
-    rating: 4.5
+    rating: 4.5,
+    features:["Rooftop Pool", "Terraces", "Spa-Inspired Bathrooms", "Open-Concept Living", "Panoramic City Views"]
   },
   {
     title: "Spacious 3 Bed Apartment",
       images: ["/images/Spacious3BedApartmentInAGatedEstate1.jpeg","/images/Spacious3BedApartmentInAGatedEstate2.jpeg","/images/Spacious3BedApartmentInAGatedEstate3.jpeg"],
-      description: "Spacious penthouse with rooftop terrace, gym, and infinity pool.",
+      description: "Luxury 3-bedroom apartment in a gated estate, designed for opulent and convenient living. Fully finished with designer fittings, ample parking space, expansive living areas, and a rooftop terrace. Located close to the city center with access to fantastic eateries, bars, and a gym.",
       category: "Apartment",
       type: "For Sale",
-      location: "Victoria Island, Lagos",
-      price: '₦4,000,000,000',
+      location: "Lekki Phase 1, Lagos",
+      price: '₦165,000,000',
       status: "Available",
-      rating: 4.5
+      rating: 4.8,
+      features:[
+        "Secured",
+        "Ample Parking",
+        "Sit-out Balcony",
+        "Expansive Living Area",
+        "Walk-in Wardrobes",
+        "Gunite-Fitted Swimming Pool",
+        "Rooftop Terrace"
+      ]
     },
+    {
+      title: "Exotic 4 Bedroom Terrace",
+        images: ["/images/Exotic4BedroomTerrace1.jpeg","/images/Exotic4BedroomTerrace2.jpeg","/images/Exotic4BedroomTerrace3.jpeg"],
+        description: "This luxurious 4-bedroom terraced duplex offers a serene, trendy, and secure living experience. With a fully finished interior and easy access to transport links, the property boasts a spacious living area, a modern fully-fitted kitchen, and all en-suite bedrooms.",
+        category: "Terraced Duplex",
+        type: "For Sale",
+        location: "Osapa London, Lekki, Lagos",
+        price: '₦395,000,000',
+        status: "Available",
+        rating: 5,
+        features:[
+          "Swimming Pool",
+          "Spacious Living Room",
+          "Jacuzzi",
+          "CCTV Cameras",
+          "3 Parking Spaces",
+          "Gym",
+          "Secured Estate"
+        ]
+      },
+      {
+        title: "Brand New 4 Bedroom Terrace Duplex",
+        images:["/images/BrandNew4BedroomTerrace1.jpeg", "/images/BrandNew4BedroomTerrace2.jpeg", "/images/BrandNew4BedroomTerrace3.jpeg"],
+        description: "This brand new 4-bedroom terraced duplex with 1 BQ is situated in a gated estate in Lekki Phase 1, offering modern living with excellent transport links. The property is fully finished and boasts a spacious living area, fully fitted kitchen, en-suite bedrooms, modern bathrooms, and a private sit-out balcony.",
+        category: "Terrace Duplex",
+        type: "For Sale",
+        location: "Lekki Phase 1, Lagos",
+        price: '₦132,000,000',
+        status: "Available",
+        rating: 4.9,
+        features:[
+          "All Rooms Ensuite",
+          "Fully Fitted Kitchen",
+          "Swimming Pool",
+          "Airy Sit-out Balcony",
+          "Rooftop Terrace",
+          "Ample Parking Space"
+      ]
+      },
   {
     title: "Commercial Space In Opebi",
     // images:["//ab005.jpeg", "//ab005.jpeg", "//ab005.jpeg"],
