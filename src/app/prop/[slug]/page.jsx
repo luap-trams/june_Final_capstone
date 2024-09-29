@@ -23,7 +23,7 @@ export default function PropDetails({params}) {
     const relatedProp = properties.filter((card => card.category == details.category && details.title !== card.title))
 
     const relatedCard = relatedProp.map((card, index) => <Link href={`/prop/${card.title.split(' ').join('-')}`} title={card.title} className='cursor-pointer' key={index}>
-    <PropertyCard title={card.title} type={card.type} rating={card.rating} category={card.category}/>
+    <PropertyCard title={card.title} type={card.type} rating={card.rating} category={card.category} price={card.price}/>
   </Link>);
 
 const otherImages = details.images?.map((image, index) => (
@@ -38,13 +38,12 @@ const featureList = details.features?.map((feature, index) => (
   return (
     <div className='text-center rounded-md'>
         <h1 className='md:text-2xl py-3'>{details.title}</h1>
-        {/* <div className='flex justify-center mx-auto px-10 gap-x-8'> */}
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
           {otherImages}
         </div>
 
         {/* Description, features and like button wrapped within a div to apply border */}
-        <div className=' shadow'>
+        <div className='shadow'>
         <p className='w-full md:flex place-items-center flex-nowrap mx-auto p-5 bg-transparent md:w-1/2'>{details.description}</p>
         {/* <img src={details.images[0]} alt={details.title} className="w-1/3 mx-auto" /> */}
         <div className='features-list'>
@@ -61,9 +60,9 @@ const featureList = details.features?.map((feature, index) => (
 
       </div>
             <div>
-              <h2 className='text-4xl font-bold p-2'>Related properties</h2>
+              <h2 className='text-2xl font-bold p-2'>Related properties</h2>
 
-              <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+              <div className='grid grid-cols-1 md:grid-cols-3 gap-4 shadow-2xl'>
                 {relatedCard}
               </div>
             </div>
