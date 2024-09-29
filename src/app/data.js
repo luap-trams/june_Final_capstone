@@ -101,6 +101,25 @@ export const properties = [
           "Ample Parking Space"
       ]
       },
+      {
+        title: "Newly Built 5 Bedroom Duplex",
+        images:["/images/NewlyBuilt5BedroomDuplex1.jpeg", "/images/NewlyBuilt5BedroomDuplex2.jpeg", "/images/NewlyBuilt5BedroomDuplex3.jpeg"],
+        description: "Discover this stunningly finished 5-bedroom detached duplex nestled in the prestigious Pinnock Beach Estate, Lekki, Lagos. Featuring spacious living areas, a fully equipped kitchen, en-suite bedrooms with walk-in closets, and premium bathrooms, this home offers luxurious comfort and style.",
+        category: "Terrace Duplex",
+        type: "For Sale",
+        location: "Pinnock Beach Estate, Lekki, Lagos.",
+        price: '₦165,000,000',
+        status: "Available",
+        rating: 4.9,
+        features:[
+          "All Rooms Ensuite",
+          "Fully Fitted Kitchen",
+          "Swimming Pool",
+          "Airy Sit-out Balcony",
+          "Rooftop Terrace",
+          "Ample Parking Space"
+      ]
+      },
   {
     title: "Commercial Space In Opebi",
     // images:["//ab005.jpeg", "//ab005.jpeg", "//ab005.jpeg"],
