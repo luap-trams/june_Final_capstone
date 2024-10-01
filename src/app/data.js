@@ -1,6 +1,63 @@
 export const properties = [
 
-
+  {
+    title: "Luxury 4 Bedroom Detached Duplex",
+    images:["/images/Luxury4BedroomDetachedDuplex1.jpeg","/images/Luxury4BedroomDetachedDuplex2.jpeg","/images/Luxury4BedroomDetachedDuplex3.jpeg"],
+    description: "This stunning, modern home features a large living area with floor-to-ceiling windows, allowing ample natural light and breathtaking views. The fully fitted marble countertop adds a touch of elegance to the spacious kitchen. All rooms are ensuite with fitted bathrooms and walk-in wardrobes, offering luxurious living.The home includes advanced amenities such as concierge service, home entertainment automation, and ample parking space.",
+    category: "Duplex",
+    type: "For Sale",
+    location: "Ikoyi, Lagos",
+    price: '₦220,000,000', // In Naira
+    status: "Available",
+    rating: 5,
+    features: [
+      "Fitted Kitchen with accessories",
+      "Modern POP Ceiling",
+      "Detailed Finishing",
+      "Walk-in Wardrobes",
+      "Ensuite Bathrooms",
+      "Jacuzzi",
+      "Home Entertainment Automation"
+    ]
+  },
+  {
+    title: "Brand New 4 Bedroom Terrace Duplex",
+    images:["/images/BrandNew4BedroomTerrace1.jpeg", "/images/BrandNew4BedroomTerrace2.jpeg", "/images/BrandNew4BedroomTerrace3.jpeg"],
+    description: "This brand new 4-bedroom terraced duplex with 1 BQ is situated in a gated estate in Lekki Phase 1, offering modern living with excellent transport links. The property is fully finished and boasts a spacious living area, fully fitted kitchen, en-suite bedrooms, modern bathrooms, and a private sit-out balcony.",
+    category: "Duplex",
+    type: "For Sale",
+    location: "Lekki Phase 1, Lagos",
+    price: '₦132,000,000',
+    status: "Available",
+    rating: 4.9,
+    features:[
+      "All Rooms Ensuite",
+      "Fully Fitted Kitchen",
+      "Swimming Pool",
+      "Airy Sit-out Balcony",
+      "Rooftop Terrace",
+      "Ample Parking Space"
+  ]
+  },
+  {
+    title: "Newly Built 5 Bedroom Duplex",
+    images:["/images/NewlyBuilt5BedroomDuplex1.jpeg", "/images/NewlyBuilt5BedroomDuplex2.jpeg", "/images/NewlyBuilt5BedroomDuplex3.jpeg"],
+    description: "Discover this stunningly finished 5-bedroom detached duplex nestled in the prestigious Pinnock Beach Estate, Lekki, Lagos. Featuring spacious living areas, a fully equipped kitchen, en-suite bedrooms with walk-in closets, and premium bathrooms, this home offers luxurious comfort and style.",
+    category: "Duplex",
+    type: "For Sale",
+    location: "Pinnock Beach Estate, Lekki, Lagos.",
+    price: '₦165,000,000',
+    status: "Available",
+    rating: 4.9,
+    features:[
+      "All Rooms Ensuite",
+      "Fully Fitted Kitchen",
+      "Swimming Pool",
+      "Airy Sit-out Balcony",
+      "Rooftop Terrace",
+      "Ample Parking Space"
+  ]
+  },
   {
     title: "Penthouse In Lekki",
     images:["/images/CommercialSpaceInIkeja.jpeg","/images/DetachedHouseInGbagada.jpeg","/images/PenthouseInLekki.jpeg"],
@@ -17,7 +74,7 @@ export const properties = [
     title: "Luxury Villa In Blue Island",
     images:["/images/DetachedHouseInGbagada.jpeg","/images/LuxuryVillaInBlueIsland.jpeg","/images/CommercialSpaceInIkeja.jpeg"],
     description: "Well-equipped office space with ample natural light, high-speed internet, and meeting rooms.",
-    category: "Office",
+    category: "Luxury Villa",
     type: "For Rent",
     location: "Lekki Phase 1, Lagos",
     price: '₦1,500,000', // Monthly rent
@@ -66,7 +123,7 @@ export const properties = [
       title: "Exotic 4 Bedroom Terrace Duplex",
         images: ["/images/Exotic4BedroomTerrace1.jpeg","/images/Exotic4BedroomTerrace2.jpeg","/images/Exotic4BedroomTerrace3.jpeg"],
         description: "This luxurious 4-bedroom terraced duplex offers a serene, trendy, and secure living experience. With a fully finished interior and easy access to transport links, the property boasts a spacious living area, a modern fully-fitted kitchen, and all en-suite bedrooms.",
-        category: "Terrace Duplex",
+        category: "Duplex",
         type: "For Sale",
         location: "Osapa London, Lekki, Lagos",
         price: '₦395,000,000',
@@ -83,43 +140,27 @@ export const properties = [
         ]
       },
       {
-        title: "Brand New 4 Bedroom Terrace Duplex",
-        images:["/images/BrandNew4BedroomTerrace1.jpeg", "/images/BrandNew4BedroomTerrace2.jpeg", "/images/BrandNew4BedroomTerrace3.jpeg"],
-        description: "This brand new 4-bedroom terraced duplex with 1 BQ is situated in a gated estate in Lekki Phase 1, offering modern living with excellent transport links. The property is fully finished and boasts a spacious living area, fully fitted kitchen, en-suite bedrooms, modern bathrooms, and a private sit-out balcony.",
-        category: "Terrace Duplex",
-        type: "For Sale",
-        location: "Lekki Phase 1, Lagos",
-        price: '₦132,000,000',
-        status: "Available",
-        rating: 4.9,
-        features:[
-          "All Rooms Ensuite",
-          "Fully Fitted Kitchen",
-          "Swimming Pool",
-          "Airy Sit-out Balcony",
-          "Rooftop Terrace",
-          "Ample Parking Space"
-      ]
-      },
-      {
-        title: "Newly Built 5 Bedroom Duplex",
-        images:["/images/NewlyBuilt5BedroomDuplex1.jpeg", "/images/NewlyBuilt5BedroomDuplex2.jpeg", "/images/NewlyBuilt5BedroomDuplex3.jpeg"],
-        description: "Discover this stunningly finished 5-bedroom detached duplex nestled in the prestigious Pinnock Beach Estate, Lekki, Lagos. Featuring spacious living areas, a fully equipped kitchen, en-suite bedrooms with walk-in closets, and premium bathrooms, this home offers luxurious comfort and style.",
-        category: "Terrace Duplex",
-        type: "For Sale",
-        location: "Pinnock Beach Estate, Lekki, Lagos.",
-        price: '₦165,000,000',
-        status: "Available",
-        rating: 4.9,
-        features:[
-          "All Rooms Ensuite",
-          "Fully Fitted Kitchen",
-          "Swimming Pool",
-          "Airy Sit-out Balcony",
-          "Rooftop Terrace",
-          "Ample Parking Space"
-      ]
-      },
+        title: "Brand New 4 BR Terrace Duplex",
+          images: ["/images/BrandNew4BedTerraceDuplex1.jpeg","/images/BrandNew4BedTerraceDuplex2.jpeg","/images/BrandNew4BedTerraceDuplex3.jpeg"],
+          description: "This newly built 4-bedroom terraced duplex with a swimming pool is located in a prestigious, gated estate in Ikate, Lekki. The property is fully finished with modern fittings, providing a spacious living experience and proximity to essential amenities like supermarkets, restaurants, and cafes. With easy access to transportation, this duplex is ideal for family living or an upscale lifestyle.The property features a fully fitted kitchen, en-suite bedrooms, and modern bathrooms with showers over baths. It also boasts a private sit-out balcony, rooftop terrace, ample parking space, and 24-hour security, ensuring both luxury and safety.",
+          category: "Duplex",
+          type: "For Rent",
+          location: "Ikate Lekki, Lagos",
+          price: '₦9,000,000',
+          status: "Available",
+          rating: 5,
+          features:[
+            "All Rooms Ensuite",
+            "Swimming Pool",
+            "Fitted Kitchen",
+            "Walk-in Closet",
+            "24 Hours Security",
+            "Rooftop Terrace",
+            "Gated Neighborhood"
+          ]
+        },
+      
+      
   {
     title: "Commercial Space In Opebi",
     // images:["//ab005.jpeg", "//ab005.jpeg", "//ab005.jpeg"],
