@@ -22,8 +22,8 @@ export default function PropDetails({params}) {
 
     const relatedProp = properties.filter((card => card.category == details.category && details.title !== card.title))
 
-    const relatedCard = relatedProp.map((card, index) => <Link href={`/prop/${card.title.split(' ').join('-')}`} title={card.title} className='cursor-pointer' key={index}>
-    <PropertyCard title={card.title} type={card.type} rating={card.rating} category={card.category} price={card.price}/>
+    const relatedCard = relatedProp.map((card, index) => <Link href={`/prop/${card.title.split(' ').join('-')}`} title={card.title} className='cursor-pointer' key={index} className='rounded-lg shadow-2xl'>
+    <PropertyCard title={card.title} type={card.type} rating={card.rating} location={card.location} category={card.category} price={card.price}/>
   </Link>);
 
 const otherImages = details.images?.map((image, index) => (
@@ -37,14 +37,15 @@ const featureList = details.features?.map((feature, index) => (
 
   return (
     <div className='text-center rounded-md'>
-        <h1 className='md:text-2xl py-3'>{details.title}</h1>
+        <h1 className='md:text-2xl py-3 font-medium -mb-4'>{details.title}</h1>
+        <h2 className='text-sm font-medium mb-1'>{details.location}</h2>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
           {otherImages}
         </div>
 
         {/* Description, features and like button wrapped within a div to apply border */}
-        <div className='shadow'>
-        <p className='w-full md:flex place-items-center flex-nowrap mx-auto p-5 bg-transparent md:w-1/2'>{details.description}</p>
+        <div>
+        <p className='w-full md:flex place-items-center flex-nowrap mx-auto p-5 bg-transparent md:w-4/5'>{details.description}</p>
         {/* <img src={details.images[0]} alt={details.title} className="w-1/3 mx-auto" /> */}
         <div className='features-list'>
             <h2 className='text-lg font-bold'>Features</h2>
@@ -62,7 +63,7 @@ const featureList = details.features?.map((feature, index) => (
             <div>
               <h2 className='text-2xl font-bold p-2'>Related properties</h2>
 
-              <div className='grid grid-cols-1 md:grid-cols-3 gap-4 shadow-2xl'>
+              <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
                 {relatedCard}
               </div>
             </div>

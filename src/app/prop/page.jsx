@@ -22,7 +22,7 @@ export default function PropertyPage() {
       <section key={index} className='rounded-lg shadow-2xl'>
       
       <Link href={`/prop/${card.title.split(' ').join('-')}`} title={card.title} className='cursor-pointer'>
-        <PropertyCard title={card.title} category={card.category} type={card.type} price={card.price} rating={card.rating}/>
+        <PropertyCard title={card.title} location={card.location} category={card.category} type={card.type} price={card.price} rating={card.rating}/>
       </Link>
     </section>
     ))
