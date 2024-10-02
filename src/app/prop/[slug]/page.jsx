@@ -56,7 +56,7 @@ const featureList = details.features?.map((feature, index) => (
 
         <div className='flex justify-center items-center mx-auto'>
         {/* <button onClick={handlePropAdd} className='bg-blue-900 text-white p-3 rounded-md m-2'>add property</button> */}
-        <button onClick={handlePropAdd} className='bg-blue-900 text-blue-300 text-2xl p-1.5 rounded-md m-2 h-10 w-22 px-8 '><FaHeart /></button>
+        <button onClick={handlePropAdd} className='bg-blue-900 text-blue-300 text-2xl p-1.5 rounded-md m-2 h-10 w-22 px-8 hover:bg-red-400 hover:text-white'><FaHeart /></button>
         </div>
 
       </div>
