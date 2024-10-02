@@ -64,7 +64,7 @@ const featureList = details.features?.map((feature, index) => (
         </div>
 
       </div>
-            <div>
+            <div className='px-24 pb-6'>
               <h2 className='text-2xl font-bold p-2'>Related properties</h2>
 
               <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
