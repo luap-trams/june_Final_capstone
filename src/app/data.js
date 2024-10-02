@@ -64,10 +64,10 @@ export const properties = [
     description: "This exquisite penthouse offers an unparalleled living experience in one of Lagos' most prestigious neighborhoods. Nestled within a secure gated community, the property boasts stunning panoramic views of the city and ocean.",
     category: "Apartment",
     type: "For Sale",
-    location: "Ikoyi, Lagos",
+    location: "Lekki, Lagos",
     price: '₦30,000,000', // In Naira
     status: "Available",
-    rating: 5,
+    rating: 4.5,
     features: ["3 Bedrooms", "2 Bathrooms", "Swimming Pool", "Large Garden", "Garage"]
   },
   {

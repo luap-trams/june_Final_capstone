@@ -7,6 +7,7 @@ import { useContext } from 'react'
 import { SidebarContext } from "@/app/providers"
 import { FaCheck } from 'react-icons/fa';
 import { FaHeart } from 'react-icons/fa';
+import { AiFillEnvironment } from 'react-icons/ai';
 
 export default function PropDetails({params}) {
 
@@ -38,7 +39,10 @@ const featureList = details.features?.map((feature, index) => (
   return (
     <div className='text-center rounded-md'>
         <h1 className='md:text-2xl py-3 font-medium -mb-4'>{details.title}</h1>
+      <div className='flex flex-row gap-2 justify-center m-auto'>
+        <p><AiFillEnvironment size={20} /></p>
         <h2 className='text-sm font-medium mb-1'>{details.location}</h2>
+        </div>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
           {otherImages}
         </div>
