@@ -37,7 +37,7 @@ export default function ContactPage() {
                   name="name"
                   placeholder="Your Name"
                   required
-                  className="text-black w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="text-black w-full px-4 py-2 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function ContactPage() {
                   name="email"
                   placeholder="you@example.com"
                   required
-                  className="text-black w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="text-black w-full px-4 py-2 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
             </div>
@@ -69,13 +69,13 @@ export default function ContactPage() {
                   name="phone"
                   placeholder="+234-802-081-7992"
                   required
-                  className="text-black w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="text-black w-full px-4 py-2 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
             </div> 
             <div className="mt-6">
-              <button type="submit" className="submit-button w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                Submit
+              <button type="submit" className="submit-button w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                Send
               </button>
             </div>
           </form>
