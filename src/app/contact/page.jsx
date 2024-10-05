@@ -12,8 +12,8 @@ export default function ContactPage() {
           We'd love to connect with you to learn more about what you have to say.
         </p>
       </div>
-      <div className="contact-container flex flex-row justify-center m-24 p-9 gap-10 bg-blue-300 hover:bg-blue-900 hover:text-white rounded-sm">
-        <div className="map-container flex-grow w-full md:w-1/2">
+      <div className="contact-container flex flex-col md:flex-row justify-center m-24 p-9 gap-10 bg-blue-300 hover:bg-blue-900 hover:text-white rounded-sm">
+        <div className="map-container flex-grow w-full md:w-1/2 mb-10 md:mb-0">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.197072884662!2d3.356257074185503!3d6.580315093413179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9212d5bf9a33%3A0xc2187ade5bb7d451!2sIsaac%20John%20St%2C%20Ikeja%20GRA%2C%20Ikeja%20101233%2C%20Lagos%2C%20Nigeria!5e1!3m2!1sen!2sus!4v1727512474300!5m2!1sen!2sus"
             style={{ border: '0' }}
@@ -37,7 +37,7 @@ export default function ContactPage() {
                   name="name"
                   placeholder="Your Name"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="text-black w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function ContactPage() {
                   name="email"
                   placeholder="you@example.com"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="text-black w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
             </div>
@@ -69,10 +69,10 @@ export default function ContactPage() {
                   name="phone"
                   placeholder="+234-802-081-7992"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="text-black w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
-            </div>
+            </div> 
             <div className="mt-6">
               <button type="submit" className="submit-button w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
                 Submit
