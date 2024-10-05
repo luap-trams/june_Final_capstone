@@ -15,12 +15,12 @@ export default function ContactPage() {
       <div className="contact-container flex flex-col md:flex-row justify-center m-24 p-9 gap-10 bg-blue-300 hover:bg-blue-900 hover:text-white rounded-sm">
         <div className="map-container flex-grow w-full md:w-1/2 mb-10 md:mb-0">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.197072884662!2d3.356257074185503!3d6.580315093413179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9212d5bf9a33%3A0xc2187ade5bb7d451!2sIsaac%20John%20St%2C%20Ikeja%20GRA%2C%20Ikeja%20101233%2C%20Lagos%2C%20Nigeria!5e1!3m2!1sen!2sus!4v1727512474300!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d244221.26416685322!2d3.3893430873863624!3d6.491038685801364!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9212d5bf9a33%3A0xc2187ade5bb7d451!2sIsaac%20John%20St%2C%20Ikeja%20GRA%2C%20Ikeja%20101233%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1728162166895!5m2!1sen!2sus"
             style={{ border: '0' }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="w-full h-full rounded-lg"
+            className="w-full h-full rounded-sm"
           />
         </div>
         <div className="form-container flex-grow w-full md:w-1/2">
