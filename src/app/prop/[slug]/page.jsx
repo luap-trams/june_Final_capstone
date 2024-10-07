@@ -7,6 +7,9 @@ import { useContext } from 'react'
 import { SidebarContext } from "@/app/providers"
 import { FaCheck } from 'react-icons/fa';
 import { FaHeart } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
+import { FaPhone } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
 import { AiFillEnvironment } from 'react-icons/ai';
 
 export default function PropDetails({params}) {
@@ -38,11 +41,32 @@ const featureList = details.features?.map((feature, index) => (
 
   return (
     <div className='text-center rounded-md'>
-        <h1 className='md:text-2xl py-3 font-medium -mb-4'>{details.title}</h1>
-      <div className='flex flex-row gap-2 justify-center m-auto'>
-        <p><AiFillEnvironment size={20} /></p>
-        <h2 className='text-sm font-medium mb-1'>{details.location}</h2>
-        </div>
+        <div className='main-container flex justify-center mt-5'>
+            <div className='inner-container flex flex-row gap-10 place-items-center mb-3'>
+                <div>
+              <h1 className='text-2xl font-semibold'>{details.title}</h1>
+              <p className='text-left'>{details.location}</p>
+                </div>
+                <div>
+                  <div className='like-button flex flex-row items-end gap-2 m-auto'>
+              <button onClick={handlePropAdd}><FaHeart className=' bg-blue-400 hover:bg-red-400 p-1.5 text-3xl hover:text-white rounded-md' /></button>
+              
+
+                <button><a href={`mailto:luap.trams@gmail.com`} target="_blank"> 
+                <FaEnvelope className='email-button bg-blue-400 text-black hover:bg-blue-400 p-1.5 text-3xl hover:text-white rounded-md'/></a></button>
+                <button><a href={`https://api.whatsapp.com/send?phone=2348020817992`} target="_blank"> 
+                <FaWhatsapp className='whatsapp-button bg-blue-400 text-black hover:bg-green-600 p-1.5 text-3xl hover:text-white rounded-md'/></a></button>
+                <button><a href={`tel:+2348020817992`} target="_blank">
+        <FaPhone className="phone-button bg-blue-400 hover:text-white p-1.5 text-3xl rounded-md" />
+      </a> </button>
+              </div>
+              <button>{details.price}</button>
+      <div>
+              </div>
+              </div>
+            </div>
+      </div>
+
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
           {otherImages}
         </div>
@@ -58,10 +82,10 @@ const featureList = details.features?.map((feature, index) => (
               </ul>
       </div>
 
-        <div className='flex justify-center items-center mx-auto'>
+        {/* <div className='flex justify-center items-center mx-auto'> */}
         {/* <button onClick={handlePropAdd} className='bg-blue-900 text-white p-3 rounded-md m-2'>add property</button> */}
-        <button onClick={handlePropAdd} className='bg-blue-900 text-blue-300 text-2xl p-1.5 rounded-md m-2 h-10 w-22 px-8 hover:bg-red-400 hover:text-white'><FaHeart /></button>
-        </div>
+        {/* <button onClick={handlePropAdd} className='bg-blue-900 text-blue-300 text-2xl p-1.5 rounded-md m-2 h-10 w-22 px-8 hover:bg-red-400 hover:text-white'><FaHeart /></button>
+        </div> */}
 
       </div>
             <div className='px-24 pb-6'>

@@ -178,6 +178,7 @@ export const properties = [
     description: "Compact and affordable studio apartment for young professionals or students.",
     category: "Apartment",
     type: "For Rent",
+    location: "Shomolu, Lagos",
     price: '₦120,000', // Monthly rent
     status: "Available",
     rating: 5.5
@@ -199,6 +200,7 @@ export const properties = [
     description: "Commercial shop in a bustling market area with high foot traffic.",
     category: "Commercial",
     type: "For Rent",
+    location: "Alaba International, Lagos",
     price: '₦200,000', // Monthly rent
     status: "Available",
     rating: 4.5
@@ -220,6 +222,7 @@ export const properties = [
     description: "Affordable mini flat for students or young professionals, close to public transportation.",
     category: "Apartment",
     type: "For Rent",
+    location: "Ogudu, Lagos",
     price: '₦100,000', // Monthly rent
     status: "Available",
     rating: 4.5

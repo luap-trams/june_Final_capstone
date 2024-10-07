@@ -3,6 +3,10 @@ import PropertyLists from './components/PropertyLists'
 import Header from './components/Header'
 import "@fontsource/roboto/latin-400.css";
 import "@fontsource/roboto/latin-500.css";
+import { FaHeart } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
+import { FaPhone } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
 
 
 export default function Home() {
@@ -33,13 +37,9 @@ export default function Home() {
           </div>
           <PropertyLists />
           <Header />
-     
           
-         
-          
-    
-  </div>
-  
+      
+      </div>
   
   )
 }
