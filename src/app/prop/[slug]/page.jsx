@@ -44,7 +44,7 @@ const featureList = details.features?.map((feature, index) => (
         <div className='main-container flex justify-center mt-5'>
             <div className='inner-container flex flex-row gap-10 place-items-center mb-3'>
                 <div>
-              <h1 className='text-2xl font-semibold'>{details.title}</h1>
+              <h1 className='text-lg text-left md:text-2xl font-semibold'>{details.title}</h1>
               <p className='text-left'>{details.location}</p>
                 </div>
                 <div>
