@@ -10,7 +10,7 @@ export default function Footer() {
     <div className='flex justify-around w-full'>
         
         <div className='mt-7'>
-        <Image src={'/logo_name.jpeg'} alt={'white logo'} width={'120'} height={'120'} className='flex justify-end place-items-end'/>
+        <Image src={'/logo_name.jpeg'} alt={'white logo'} width={'120'} height={'120'} className='flex justify-end place-items-center '/>
             {/* <h1 className='text-sm text-center text-blue-400'>Property Solutions</h1> */}
           </div>
 
@@ -30,42 +30,28 @@ export default function Footer() {
     <p> SmartOptions Property Solutions <br />&copy; {(new Date('01-01-2019').getFullYear())} - {(new Date().getFullYear())}</p>
     </div>
     
-    <div className='flex justify-end gap-2 place-items-center mt-4'>
+    <div className='flex justify-end gap-1.5 place-items-center mt-4 text-lg md:text-3xl'>
 
-      {/* <Link href={'https://github.com/luap-trams/june_Final_capstone'} className='hover:text-blue-400'>
-      <p>Github</p>
-      </Link> */}
 
        <a href='https://github.com/luap-trams/june_Final_capstone' target="_blank" rel="noopener noreferrer">
-        <FaGithub size={30} color="white" />
+        <FaGithub color="white" className=''/>
       </a>
       
-      {/* <Link href={'https://www.linkedin.com/in/paul-s-736b04444/'}className='hover:text-blue-400'>
-      <p>LinkedIn</p></Link> */}
 
       <a href='https://www.linkedin.com/in/paul-s-736b0444/' target="_blank" rel="noopener noreferrer" className='hove:text-blue-400'>
-        <FaLinkedin size={30} color="#0e76a8" />
+        <FaLinkedin color="#0e76a8" />
       </a>
-
-      {/* <Link href={'http://www.facebook.com'} className='hover:border-red-700'>
-      <p>Facebook</p></Link> */}
 
       <a href='https://www.facebook.com' target='_blank' rel='noopener noreferrer' className='hover:border-red-700'>
-        <FaFacebook size={30} color="#3b5998" />
+        <FaFacebook color="#3b5998" />
       </a>
-      
-      {/* <Link href={'http://www.instagram.com'}className='hover:text-blue-400'>
-      <p>Instagram</p></Link> */}
 
       <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-        <FaInstagram size={30} color="#e4405f" />
+        <FaInstagram  color="#e4405f" />
       </a>
 
-      {/* <Link href={'http://www.tiktok.com'}className='hover:text-blue-400'>
-      <p>Tiktok</p>
-      </Link> */}
       <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
-        <FaTiktok size={30} color="white" />
+        <FaTiktok color="white" />
       </a>
     </div>
     </div>
