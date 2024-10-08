@@ -2,7 +2,9 @@ import { FaUsers, FaBullseye, FaBriefcase, FaHandHoldingUsd, FaPhone } from 'rea
 
 const AboutUs = () => {
   return (
-    <div className="gap-10 p-10 bg-blue-200">
+    <div className='main-container'>
+    {/* <div className="bg-cover bg-center bg-no-repeat h-full"
+  style={{ backgroundImage: "url('/background_cover.jpeg')" }}> */}
    
    
       <div className="text-center text-black p-10">
@@ -71,13 +73,13 @@ const AboutUs = () => {
 
    
       <div className="text-center mt-8">
-        <div className="flex justify-center items-center mb-4">
+        {/* <div className="flex justify-center items-center mb-4">
           <FaPhone className="text-3xl mr-4 text-blue-500" />
           <h3 className="text-2xl font-semibold">Contact Us</h3>
-        </div>
-        <p>
+        </div> */}
+        {/* <p>
           Ready to experience the SmartOptions difference? Contact us today to learn more about how we can help you achieve your real estate goals. We look forward to partnering with you in managing your properties with intelligence, integrity, and a commitment to excellence.
-        </p>
+        </p> */}
       </div>
     </div>
   );

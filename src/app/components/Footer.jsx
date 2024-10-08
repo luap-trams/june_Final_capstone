@@ -6,35 +6,24 @@ import { FaLinkedin, FaInstagram, FaFacebook, FaGithub, FaTiktok } from 'react-i
 
 export default function Footer() {
   return (
-   <footer className='h-32 bg-black text-white text-sm md:text-lg mx-auto'>
+   <footer className='h-full md:h-32 bg-black text-white text-sm md:text-lg mx-auto'>
     <div className='flex justify-around w-full'>
         
-        <div className='mt-7'>
+        <div className='text-sm mt-7 md:mt-7'>
         <Image src={'/logo_name.jpeg'} alt={'white logo'} width={'120'} height={'120'} className='flex justify-end place-items-center '/>
             {/* <h1 className='text-sm text-center text-blue-400'>Property Solutions</h1> */}
           </div>
 
-    {/* <div className='font-thin'>
-      <h1 className='text-2xl py-5 hover:text-blue-900 uppercase font-bold'>home office</h1>
-      <p>256, Mercure Crescent,  <br />Off Shitta Adetola Road, <br />Ojota - Lagos Nigeria</p>
-      <p> <a href="mailto:luap.trams@gmail.com" className="text-white hover:underline lowercase">
-      luap.trams@gmail.com</a>
-    </p>
-      <p>
-        <a href="tel:+2349070000007" className="text-white hover:underline">
-      +234 907 000 0007</a>
-      </p>
-    </div> */}
     
-    <div className='flex justify-center place-items-end text-center hover:text-blue-400'>
+    <div className='flex justify-center place-items-center text-center hover:text-blue-400 mt-7'>
     <p> SmartOptions Property Solutions <br />&copy; {(new Date('01-01-2019').getFullYear())} - {(new Date().getFullYear())}</p>
     </div>
     
-    <div className='flex justify-end gap-1.5 place-items-center mt-4 text-lg md:text-3xl'>
-
-
-       <a href='https://github.com/luap-trams/june_Final_capstone' target="_blank" rel="noopener noreferrer">
-        <FaGithub color="white" className=''/>
+    <div className='connect-left'> <p className='flex justify-center items-center mt-12 md:mt-9 uppercase text-xs md:items-center md:text-sm mb-1'>connect with us</p>
+      <div className='footer-icon flex flex-row gap-2 text-lg md:text-3xl justify-end items-center'>
+      
+      <a href='https://github.com/luap-trams/june_Final_capstone' target="_blank" rel="noopener noreferrer">
+        <FaGithub color="white"/>
       </a>
       
 
@@ -54,6 +43,10 @@ export default function Footer() {
         <FaTiktok color="white" />
       </a>
     </div>
+    </div>
+
+
+       
     </div>
 
    </footer>

@@ -73,10 +73,11 @@ const featureList = details.features?.map((feature, index) => (
 
         {/* Description, features and like button wrapped within a div to apply border */}
         <div>
+          <h2 className='text-center text-lg font-bold capitalize mt-5 -mb-3 bg-blue-900 p-2 text-white'>property overview</h2>
         <p className='w-full md:flex place-items-center flex-nowrap mx-auto p-5 bg-transparent md:w-4/5'>{details.description}</p>
         {/* <img src={details.images[0]} alt={details.title} className="w-1/3 mx-auto" /> */}
         <div className='features-list'>
-            <h2 className='text-lg font-bold'>Features</h2>
+            <h2 className='text-lg font-bold capitalize '>key features</h2>
               <ul className='flex-col md:inline-flex md:flex-row justify-center gap-5 mx-auto'>
                 {featureList}
               </ul>
