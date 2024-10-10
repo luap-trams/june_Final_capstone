@@ -23,7 +23,6 @@ export default function PropDetails({params}) {
       setPropItem([...propItem, {title: details.title, type: details.type, description: details.description, price: details.price}])
     }
 
-
     const relatedProp = properties.filter((card => card.category == details.category && details.title !== card.title))
 
     const relatedCard = relatedProp.map((card, index) => <Link href={`/prop/${card.title.split(' ').join('-')}`} title={card.title} className='cursor-pointer' key={index} className='rounded-lg shadow-2xl'>

@@ -8,7 +8,7 @@ export const properties = [
     type: "For Sale",
     location: "Ikoyi, Lagos",
     price: '₦220,000,000', // In Naira
-    status: "Available",
+    status: "rented",
     rating: 5,
     features: [
       "Fitted Kitchen with accessories",
@@ -28,7 +28,7 @@ export const properties = [
     type: "For Sale",
     location: "Lekki Phase 1, Lagos",
     price: '₦132,000,000',
-    status: "Available",
+    status: "available",
     rating: 4.9,
     features:[
       "All Rooms Ensuite",
@@ -47,7 +47,7 @@ export const properties = [
     type: "For Sale",
     location: "Pinnock Beach Estate, Lekki, Lagos.",
     price: '₦165,000,000',
-    status: "Available",
+    status: "",
     rating: 4.9,
     features:[
       "All Rooms Ensuite",
@@ -66,7 +66,7 @@ export const properties = [
     type: "For Sale",
     location: "Lekki, Lagos",
     price: '₦30,000,000', // In Naira
-    status: "Available",
+    status: "sold",
     rating: 4.5,
     features: ["3 Bedrooms", "2 Bathrooms", "Swimming Pool", "Large Garden", "Garage"]
   },
@@ -95,7 +95,7 @@ export const properties = [
     type: "For Rent",
     location: "Surulere, Lagos",
     price: '₦250,000', // Monthly rent
-    status: "Available",
+    status: "",
     rating: 4.5,
     features:["Rooftop Pool", "Terraces", "Spa-Inspired Bathrooms", "Open-Concept Living", "Panoramic City Views"]
   },
@@ -107,7 +107,7 @@ export const properties = [
       type: "For Sale",
       location: "Lekki Phase 1, Lagos",
       price: '₦165,000,000',
-      status: "Available",
+      status: "",
       rating: 4.8,
       features:[
         "Secured",
@@ -127,7 +127,7 @@ export const properties = [
         type: "For Sale",
         location: "Osapa London, Lekki, Lagos",
         price: '₦395,000,000',
-        status: "Available",
+        status: "",
         rating: 5,
         features:[
           "Swimming Pool",
@@ -257,7 +257,7 @@ export const properties = [
     type: "For Sale",
     location: "Ikoyi, Lagos",
     price: '₦4,000,000,000',
-    status: "Available",
+    status: "sold",
     rating: 4.1
   },
   {
@@ -268,7 +268,7 @@ export const properties = [
     type: "For Rent",
     location: "Surulere, Lagos",
     price: '₦250,000', // Monthly rent
-    status: "Available",
+    status: "sold",
     rating: 4.5
   },
   {
@@ -279,7 +279,7 @@ export const properties = [
     type: "For Sale",
     location: "Ikeja GRA, Lagos",
     price: '₦600,000,000',
-    status: "Available",
+    status: "sold",
     rating: 4.5
   },
   {
@@ -289,7 +289,7 @@ export const properties = [
     category: "Apartment",
     type: "For Rent",
     price: '₦120,000', // Monthly rent
-    status: "Available",
+    status: "sold",
     rating: 4.2
   },
   {
@@ -300,7 +300,7 @@ export const properties = [
     type: "For Sale",
     location: "Ajah, Lagos",
     price: '₦70,000,000',
-    status: "Available",
+    status: "sold",
     rating: 4.5
   }
 ];

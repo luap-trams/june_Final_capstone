@@ -10,7 +10,7 @@ export default function PropertyLists() {
     const cards = properties.sort((x,y) => y.category - x.category).map((card,index) => (
         <section key={index} className='rounded-md shadow-lg'>
             <Link href={`/prop/${card.title.split(' ').join('-')}`} title={card.title} className='cursor-pointer'>
-            <PropertyCard title={card.title} type={card.type}price={card.price}img={card.images}rating={card.rating} location={card.location} category={card.category}/>
+            <PropertyCard title={card.title} type={card.type}price={card.price}img={card.images}rating={card.rating} location={card.location} category={card.category} status={card.status}/>
             </Link>
         </section>
     )).slice(0,3)
