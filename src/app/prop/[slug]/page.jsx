@@ -53,7 +53,7 @@ const featureList = details.features?.map((feature, index) => (
 
                 <button><a href={`mailto:luap.trams@gmail.com`} target="_blank"> 
                 <FaEnvelope className='email-button bg-blue-400 text-black hover:bg-blue-400 p-1.5 text-3xl hover:text-white rounded-md'/></a></button>
-                <button><a href={`https://api.whatsapp.com/send?phone=2348020817992`} target="_blank"> 
+                <button><a href={`https://api.whatsapp.com/send?phone=2348020817992&text=Hello,%0A%0AI%27d%20love%20to%20view%20this%20property.%20When%20would%20be%20a%20good%20time%20to%20arrange%20a%20visit?`} target="_blank"> 
                 <FaWhatsapp className='whatsapp-button bg-blue-400 text-black hover:bg-green-600 p-1.5 text-3xl hover:text-white rounded-md'/></a></button>
                 <button><a href={`tel:+2348020817992`} target="_blank">
         <FaPhone className="phone-button bg-blue-400 hover:text-white p-1.5 text-3xl rounded-md" />
