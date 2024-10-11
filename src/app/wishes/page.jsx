@@ -13,7 +13,7 @@ export default function WishesPage() {
     }
 
     return (
-        <div>
+        <div className="main-div for comparing favorites: p-2">
           {propItem.length == 0 ?
             (
                 <h2>add property to the wish list</h2>
@@ -37,7 +37,7 @@ export default function WishesPage() {
                     {propItem.map((prop, index) => (
                         <tr key={index} className="text-center">
 
-                        <td className="flex justify-center"><Image src={`/images/${prop.title.split(' ').join('')}.jpeg`} alt={prop.title} width={'150'} height={'200'} /></td>
+                        <td className="flex justify-center my-4"><Image src={`/images/${prop.title.split(' ').join('')}.jpeg`} alt={prop.title} width={'150'} height={'200'} /></td>
                         <td>{prop.title}</td>
                         <td>{prop.type}</td>
                         <td>{prop.description}</td>

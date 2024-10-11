@@ -14,7 +14,7 @@ export default function PropertyPage() {
     function filterSearch(e){
       setSearchProp(e.target.value)
     }
-    const filterLists = properties.filter( prop => prop.title.toLowerCase().includes(searchProp.toLowerCase()) || prop.category.toLowerCase().includes(searchProp.toLowerCase()))
+    const filterLists = properties.filter( prop => prop.title.toLowerCase().includes(searchProp.toLowerCase()) || prop.category.toLowerCase().includes(searchProp.toLowerCase()) || prop.type.toLowerCase().includes(searchProp.toLowerCase()) || prop.price.toLowerCase().includes(searchProp.toLowerCase()))
     
     const cards = filterLists.length == 0 ?(
       <h1 className='flex items-center justify-center w-screen'>Oops, No results found. Explore other options or contact us for assistance.</h1>
