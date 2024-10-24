@@ -4,6 +4,7 @@ import { FaHeart } from 'react-icons/fa';
 import { useContext } from 'react';
 import { SidebarContext } from '../providers';
 import Image from 'next/image';
+import { HeartIcon } from '@heroicons/react/outline';
 
 export default function Navibar() {  
     const {val} = useContext(SidebarContext)
@@ -28,9 +29,15 @@ export default function Navibar() {
             <Link href={'/contact'}> 
                 <li className='bg-blue-900 h-8 w-34 px-3 py-1.5 rounded-full hover:bg-blue-500'>contact us</li>
             </Link>
-            <Link href={'/wishes'}> 
+            {/* <Link href={'/wishes'}> 
                 <li className='bg-blue-500 h-14 w-42 px-2 py-3 rounded-full hover:text-red-500 text-center'><FaHeart /> 
                     {val}</li>
+            </Link> */}
+            <Link href={'/wishes'}>
+            <div className='flex'>
+            <HeartIcon strokeWidth={0.5} className="w-14 h-14 rounded-full text-red-300 text-3xl bg-transparent hover:text-red-400 hover:bg-opacity-90" />
+                <li className=' text-white text-lg -mt-3 p-1 -ml-2.5 font-thin'>{val}</li>
+            </div>
             </Link>
 
         </ul>

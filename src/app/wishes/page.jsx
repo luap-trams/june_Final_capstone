@@ -13,10 +13,10 @@ export default function WishesPage() {
     }
 
     return (
-        <div className="main-div for comparing favorites: p-2">
+        <div className="main-div for comparing favorites: p-2 h-screen text-center">
           {propItem.length == 0 ?
             (
-                <h2>add property to the wish list</h2>
+                <h2>Your list is currently empty. Click the heart icon next to properties to add them.</h2>
             )
             :
             (
