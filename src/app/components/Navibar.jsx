@@ -35,8 +35,8 @@ export default function Navibar() {
             </Link> */}
             <Link href={'/wishes'}>
             <div className='flex'>
-            <HeartIcon strokeWidth={0.5} className="w-14 h-14 rounded-full text-red-300 text-3xl bg-transparent hover:text-red-400 hover:bg-opacity-90" />
-                <li className=' text-white text-lg -mt-3 p-1 -ml-2.5 font-thin'>{val}</li>
+            <HeartIcon strokeWidth={0.5} className="w-14 h-14 rounded-full text-red-300 text-3xl bg-transparent hover:text-red-300 hover:bg-opacity-90" />
+                <li className=' text-white text-lg -mt-3  -ml-2.5 font-thin rounded-full bg-red-400 w-7 text-center  h-7'>{val}</li>
             </div>
             </Link>
 
