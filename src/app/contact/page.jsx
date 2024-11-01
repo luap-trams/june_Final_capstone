@@ -72,7 +72,24 @@ export default function ContactPage() {
                   className="text-black w-full px-4 py-2 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
-            </div> 
+            </div>
+            <div className="mb-4">
+              <label htmlFor="message" className="block font-semibold mb-2">
+                Message
+              </label>
+              <div className="flex items-center">
+                <FaUser className="text-blue-500 mr-2" />
+                <input
+                  type="message"
+                  id="message"
+                  name="message"
+                  placeholder="Type your message"
+                  required
+                  className="text-black w-full px-4 py-2 border h-20 border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+            </div>
+            
             <div className="mt-6">
               <button type="submit" className="submit-button w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
                 Send
