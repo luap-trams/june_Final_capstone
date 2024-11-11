@@ -38,12 +38,12 @@ export default function PropertyPage() {
     <>
     {/* <div className='flex items-center justify-between p-3 border-4 rounded-full mt-4 border-blue-400 bg-white w-full sm:w-3/4 md:w-1/2 lg:w-2/5 xl:w-1/3 m-auto'></div> */}
     
-    <div className='inset-0 md:mr-11 fixed flex items-center border-2 mt-1.5 border-none rounded-sm bg-white w-1/2 md:w-1/5 m-auto h-7'>
+    <div className='inset-0 z-10 md:mr-11 fixed flex items-center border-2 mt-1.5 border-none rounded-sm bg-white w-1/2 md:w-1/5 m-auto h-7'>
     
     {/* <input type="text" name='search' id='search' className='outline-none block w-4/5 text-xl' placeholder='Search available properties…' defaultValue={searchProp} onChange={(e)=>filterSearch(e)} style={{ backgroundColor: 'transparent'}}/> */}
-    <input type="text" name='search' id='search' className='p-4  outline-none block w-4/5 text-sm' placeholder='Search available properties…' defaultValue={searchProp} onChange={(e)=>filterSearch(e)} style={{ backgroundColor: 'transparent'}}/>
+    <input type="text" name='search' id='search' className='p-3  outline-none block w-4/5 text-sm' placeholder='Search available properties…' defaultValue={searchProp} onChange={(e)=>filterSearch(e)} style={{ backgroundColor: 'transparent'}}/>
     
-    <IoMdSearch className=' text-2xl -mr-28 my-8-[50px] w-[50px] p-[6px] rounded-full'/>
+    <IoMdSearch className=' text-2xl -mr-40 my-8-[50px] w-[50px] p-[6px] rounded-full'/>
 
     </div>
     

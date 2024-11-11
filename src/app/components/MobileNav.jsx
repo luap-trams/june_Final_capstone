@@ -23,10 +23,10 @@ export default function MobileNav() {
 
             {/* //Mobile Nav: md:hidden means it would only be shown on mobile screens// */}
 
-            <ul className='md:hidden flex items-center justify-between h-24 bg-black text-white p-4'>
+            <ul className='absolute w-full flex items-center justify-between h-24 bg-black text-white p-4 mt-2 md:hidden '>
                 <li className='text-xl'>
                     <a href="/">
-                        <MdHome size={50} color="white" />
+                        <MdHome size={40} color="white" />
                     </a>
                 </li>
 
@@ -39,7 +39,7 @@ export default function MobileNav() {
             {/* Dropdown Menu: Same as above. Shown only on mobile screens when open */}
             
             {open && (
-                <ul className='md:hidden flex flex-col justify-around items-end bg-blue-400 text-white absolute top-16 right-0 w-auto p-4 '>
+                <ul className='flex flex-col justify-around items-end bg-blue-400 text-white absolute top-16 right-0 z-10 w-auto p-4 md:hidden '>
                     <Link href={'/'}>
                         <li className='py-2 hover:text-blue-900'>Home</li>
                     </Link>
