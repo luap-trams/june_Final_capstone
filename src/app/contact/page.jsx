@@ -26,7 +26,7 @@ export default function ContactPage() {
         <div className="form-container flex-grow w-full md:w-1/2">
           <form>
             <div className="mb-4">
-              <label htmlFor="name" className="block font-semibold mb-2">
+              <label for="name" className="block font-semibold mb-2">
                 Name
               </label>
               <div className="flex items-center">
@@ -42,7 +42,7 @@ export default function ContactPage() {
               </div>
             </div>
             <div className="mb-4">
-              <label htmlFor="email" className="block font-semibold mb-2">
+              <label for="email" className="block font-semibold mb-2">
                 Email
               </label>
               <div className="flex items-center">
@@ -51,14 +51,14 @@ export default function ContactPage() {
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="you@example.com"
+                  placeholder="luap.trams@gmail.com"
                   required
                   className="text-black w-full px-4 py-2 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
             </div>
             <div className="mb-4">
-              <label htmlFor="phone" className="block font-semibold mb-2">
+              <label for="phone" className="block font-semibold mb-2">
                 Phone Number
               </label>
               <div className="flex items-center">
@@ -74,15 +74,15 @@ export default function ContactPage() {
               </div>
             </div>
             <div className="mb-4">
-              <label htmlFor="message" className="block font-semibold mb-2">
+              <label for="text" className="block font-semibold mb-2">
                 Message
               </label>
               <div className="flex items-center">
                 <FaUser className="text-blue-500 mr-2" />
                 <input
-                  type="message"
-                  id="message"
-                  name="message"
+                  type="text"
+                  id="text"
+                  name="text"
                   placeholder="Type your message"
                   required
                   className="text-black w-full px-4 py-2 border h-20 border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"

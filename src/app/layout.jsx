@@ -5,6 +5,7 @@ import Navibar from "./components/Navibar";
 import MobileNav from "./components/MobileNav";
 import Footer from "./components/Footer";
 import { SidebarProvider } from "./providers"
+import Header from "./components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <SidebarProvider>
           <MobileNav />
 
+        <Header />
         <Navibar/>
         <div>{children}</div>
           

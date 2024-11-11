@@ -10,7 +10,7 @@ import { FaHeart } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 import { FaPhone } from 'react-icons/fa';
 import { FaEnvelope } from 'react-icons/fa';
-import { AiFillEnvironment } from 'react-icons/ai';
+// import { AiFillEnvironment } from 'react-icons/ai';
 
 export default function PropDetails({params}) {
 
@@ -23,18 +23,28 @@ export default function PropDetails({params}) {
       setPropItem([...propItem, {title: details.title, type: details.type, description: details.description, price: details.price}])
     }
 
-    const relatedProp = properties.filter((card => card.category == details.category && details.title !== card.title))
+    const relatedProp = properties.filter
+    ((card => card.category == details.category && details.title !== card.title))
 
-    const relatedCard = relatedProp.map((card, index) => <Link href={`/prop/${card.title.split(' ').join('-')}`} title={card.title} className='cursor-pointer' key={index} className='rounded-lg shadow-2xl'>
-    <PropertyCard title={card.title} type={card.type} rating={card.rating} location={card.location} category={card.category} price={card.price}/>
+    const relatedCard = relatedProp.map((card, index) => 
+    
+    <Link href={`/prop/${card.title.split(' ').join('-')}`} title={card.title} className='cursor-pointer rounded-lg shadow-2xl' key={index}> 
+    
+    <PropertyCard 
+    title={card.title} 
+    type={card.type} 
+    rating={card.rating} 
+    location={card.location} 
+    category={card.category} 
+    price={card.price}/>
   </Link>);
 
-const otherImages = details.images?.map((image, index) => (
-  <img src={image} alt={`${details.title} image ${index + 1}`} className='rounded-lg shadow-2xl mx-auto p-1' key={index} />
+const otherImages = details.images?.map((image, index) => ( <img src={image} alt={`${details.title} image ${index + 1}`} className='rounded-lg shadow-2xl mx-auto p-1' key={index} />
 ));
 
 const featureList = details.features?.map((feature, index) => (
-  <li key={index}><FaCheck className='md:inline-flex mb-2.5 gap-5 mt-2 mx-1 p-0.5 rounded-sm bg-blue-400  text-white' />{feature}</li>
+  <li key={index} className='flex flex-none text-center md:inline-flex mb-2.5 gap-5 mt-2 mx-1 p-0.5 rounded-sm text-black'>
+    <FaCheck className='md:inline-flex mb-2.5 gap-5 mt-1  p-0.5 rounded-sm bg-blue-400  text-white' />{feature}</li>
 ));
 
 
@@ -47,9 +57,12 @@ const featureList = details.features?.map((feature, index) => (
               <p className='text-left'>{details.location}</p>
                 </div>
                 <div>
-                  <div className='like-button flex flex-row items-end gap-2 m-auto'>
-              <button onClick={handlePropAdd}><FaHeart className=' bg-blue-400 hover:bg-red-400 p-1.5 text-3xl hover:text-white rounded-md' /></button>
-              
+                
+                <div className="like flex flex-row items-end gap-2 m-auto group">
+    <button onClick={handlePropAdd}>
+        <FaHeart className="bg-blue-400 hover:bg-red-400 p-1.5 text-3xl hover:text-white rounded-md" />
+    </button>
+    <p className="absolute mb-8 -ml-4  hidden group-hover:block bg-green-500 text-white p-1 rounded-lg">LIKE ME</p>
 
                 <button><a href={`mailto:luap.trams@gmail.com`} target="_blank"> 
                 <FaEnvelope className='email-button bg-blue-400 text-black hover:bg-blue-400 p-1.5 text-3xl hover:text-white rounded-md'/></a></button>
@@ -75,9 +88,9 @@ const featureList = details.features?.map((feature, index) => (
           <h2 className='text-center text-lg font-bold capitalize mt-5 -mb-3 bg-blue-900 p-2 text-white'>property overview</h2>
         <p className='w-full md:flex place-items-center flex-nowrap mx-auto p-5 bg-transparent md:w-4/5'>{details.description}</p>
         {/* <img src={details.images[0]} alt={details.title} className="w-1/3 mx-auto" /> */}
-        <div className='features-list'>
+        <div className='features-list text-center'>
             <h2 className='text-lg font-bold capitalize '>key features</h2>
-              <ul className='flex-col md:inline-flex md:flex-row justify-center gap-5 mx-auto'>
+              <ul className='md: text-center gap-5 mx-auto'>
                 {featureList}
               </ul>
       </div>
