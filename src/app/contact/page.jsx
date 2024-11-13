@@ -24,7 +24,7 @@ export default function ContactPage() {
           />
         </div>
         <div className="form-container flex-grow w-full md:w-1/2">
-          <form>
+          <form action="https://formsubmit.co/luap.trams@gmail.com" method="POST">
             <div className="mb-4">
               <label for="name" className="block font-semibold mb-2">
                 Name
