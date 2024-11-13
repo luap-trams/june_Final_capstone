@@ -66,7 +66,7 @@ export const properties = [
     type: "For Sale",
     location: "Lekki, Lagos",
     price: '₦30,000,000', // In Naira
-    status: "sold",
+    status: "available",
     rating: 4.5,
     features: ["3 Bedrooms", "2 Bathrooms", "Swimming Pool", "Large Garden", "Garage"]
   },
@@ -78,7 +78,7 @@ export const properties = [
     type: "For Rent",
     location: "Lekki Phase 1, Lagos",
     price: '₦1,500,000', // Monthly rent
-    status: "Available",
+    status: "sold",
     rating: 4.5,
     features: ["Concrete floor",
       "Dining area",
@@ -95,7 +95,7 @@ export const properties = [
     type: "For Rent",
     location: "Surulere, Lagos",
     price: '₦250,000', // Monthly rent
-    status: "",
+    status: "available",
     rating: 4.5,
     features:["Rooftop Pool", "Terraces", "Spa-Inspired Bathrooms", "Open-Concept Living", "Panoramic City Views"]
   },
@@ -107,7 +107,7 @@ export const properties = [
       type: "For Sale",
       location: "Lekki Phase 1, Lagos",
       price: '₦165,000,000',
-      status: "",
+      status: "available",
       rating: 4.8,
       features:[
         "Secured",
@@ -127,7 +127,7 @@ export const properties = [
         type: "For Sale",
         location: "Osapa London, Lekki, Lagos",
         price: '₦395,000,000',
-        status: "",
+        status: "available",
         rating: 5,
         features:[
           "Swimming Pool",
@@ -147,7 +147,7 @@ export const properties = [
           type: "For Rent",
           location: "Ikate Lekki, Lagos",
           price: '₦9,000,000',
-          status: "Available",
+          status: "available",
           rating: 5,
           features:[
             "All Rooms Ensuite",
@@ -169,7 +169,7 @@ export const properties = [
     type: "For Sale",
     location: "Ikeja GRA, Lagos",
     price: '₦600,000,000',
-    status: "Available",
+    status: "available",
     rating: 4.5
   },
   {
@@ -180,7 +180,7 @@ export const properties = [
     type: "For Rent",
     location: "Shomolu, Lagos",
     price: '₦120,000', // Monthly rent
-    status: "Available",
+    status: "available",
     rating: 5.5
   },
   {
@@ -191,7 +191,7 @@ export const properties = [
     type: "For Sale",
     location: "Ajah, Lagos",
     price: '₦70,000,000',
-    status: "Available",
+    status: "available",
     rating: 3.5
   },
   {
@@ -202,7 +202,7 @@ export const properties = [
     type: "For Rent",
     location: "Alaba International, Lagos",
     price: '₦200,000', // Monthly rent
-    status: "Available",
+    status: "available",
     rating: 4.5
   },
   {
@@ -213,7 +213,7 @@ export const properties = [
     type: "For Sale",
     location: "Gbagada, Lagos",
     price: '₦250,000,000',
-    status: "Available",
+    status: "available",
     rating: 4.5
   },
   {
@@ -224,7 +224,7 @@ export const properties = [
     type: "For Rent",
     location: "Ogudu, Lagos",
     price: '₦100,000', // Monthly rent
-    status: "Available",
+    status: "available",
     rating: 4.5
   },
   {
@@ -246,7 +246,7 @@ export const properties = [
     type: "For Rent",
     location: "Lekki Phase 1, Lagos",
     price: '₦1,000,000', // Monthly rent
-    status: "Available",
+    status: "available",
     rating: 4.5
   },
   {
@@ -279,7 +279,7 @@ export const properties = [
     type: "For Sale",
     location: "Ikeja GRA, Lagos",
     price: '₦600,000,000',
-    status: "sold",
+    status: "available",
     rating: 4.5
   },
   {
@@ -300,7 +300,7 @@ export const properties = [
     type: "For Sale",
     location: "Ajah, Lagos",
     price: '₦70,000,000',
-    status: "sold",
+    status: "available",
     rating: 4.5
   }
 ];
