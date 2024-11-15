@@ -4,6 +4,8 @@ import { Rating } from '@mui/material';
 
 import { properties } from '../data';
 
+const WHATSAPP_PHONE_NUMBER = "+2348020817992";
+
 export default function PropertyCard({ rating, title, type, description, category, price, location, status }) {
   
     // const isAvailable = properties.find(prop => prop.id === status)?.status === "available";
@@ -12,17 +14,18 @@ export default function PropertyCard({ rating, title, type, description, categor
   return (
     // Images Displayed in Flex-cols-3 for the Property List Page where you can perform search function
     <div className='flex flex-col items-center relative'> 
+      
       <div className='items-center relative'>
-        
-      {/* <p className={`property-status absolute font-bold text-1xl uppercase ${isAvailable ? 'text-green-500' : 'text-red-500'} text-center rounded-lg`}>{status}</p> */}
-      <p className={`property-status font-bold text-xs uppercase absolute ${isAvailable ? 'text-white bottom-1 right-1 bg-blue-900 hover:bg-green-500 absolute' : 'text-white top-1 left-1 bg-red-600'} text-center rounded-md p-2`}><a href={`https://api.whatsapp.com/send?phone=2348020817992&text=Hello,%0A%0AI%27d%20love%20to%20view%20this%20property.%20When%20would%20be%20a%20good%20time%20to%20arrange%20a%20visit?`} target="_blank"> 
-  {isAvailable ? "book a viewing" : "Unavailable"} </a></p>
+        {/* <p className={`property-status absolute font-bold text-1xl uppercase ${isAvailable ? 'text-green-500' : 'text-red-500'} text-center rounded-lg`}>{status}</p> */}
+      <p className={`property-status font-bold text-xs uppercase absolute pointer-events: auto ${isAvailable ? 'text-white bottom-1 right-1 bg-blue-900 hover:bg-green-500 absolute' : 'text-white top-1 left-1 bg-red-600'} text-center rounded-md p-2`}>
+        <a href={`https://api.whatsapp.com/send?phone=${WHATSAPP_PHONE_NUMBER}&text=Hello,%0A%0AI%27d%20love%20to%20view%20this%20property.%20When%20would%20be%20a%20good%20time%20to%20arrange%20a%20visit?`} target="_blank"> 
+  {isAvailable ? "book a viewing" : "Unavailable"}</a></p>
 
       <Image src={`/images/${title.split(' ').join('')}.jpeg`} alt={title} width={'400'} height={'400'} className='rounded-t-md'/>
       </div>
-      {/* Material UI rating component */}
+   
       
-      {/* Property Details */}
+     {/* Property Details */}
       <p className='m-3'>
         <Rating name='half-rating-read' defaultValue={rating} precision={0.5} max={5} readOnly  className='text-lg'/>
       </p>

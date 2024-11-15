@@ -74,9 +74,7 @@ export default function ContactPage() {
               </div>
             </div>
             <div className="mb-4">
-              <label for="text" className="block font-semibold mb-2">
-                Message
-              </label>
+              <label for="text" className="block font-semibold mb-2">Message</label>
               <div className="flex items-center">
                 <FaUser className="text-blue-500 mr-2" />
                 <input
@@ -85,7 +83,7 @@ export default function ContactPage() {
                   name="text"
                   placeholder="Type your message"
                   required
-                  className="text-black w-full px-4 py-2 border h-20 border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="text-black w-full px-4 py-2 border flex-1 border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500 "
                 />
               </div>
             </div>
