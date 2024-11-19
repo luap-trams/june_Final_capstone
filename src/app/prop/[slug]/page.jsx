@@ -24,7 +24,8 @@ export default function PropDetails({params}) {
     ((card => card.category == details.category && details.title !== card.title))
 
     const relatedCard = relatedProp.map((card, index) => 
-    
+
+    // related card shadow code
     <Link href={`/prop/${card.title.split(' ').join('-')}`} title={card.title} className='cursor-pointer rounded-lg shadow-2xl' key={index}> 
     
     <PropertyCard 
@@ -37,7 +38,7 @@ export default function PropDetails({params}) {
     price={card.price}/>
     
   </Link>);
-
+// additional images upon request
 const otherImages = details.images?.map((image, index) => ( <img src={image} alt={`${details.title} image ${index + 1}`} className='rounded-lg shadow-2xl mx-auto p-1' key={index} />
 ));
 
@@ -49,8 +50,8 @@ const featureList = details.features?.map((feature, index) => (
 
   return (
     <div className='text-center rounded-md'>
-        <div className='main-container flex justify-center mt-5'>
-            <div className='inner-container flex flex-row gap-10 place-items-center mb-3'>
+        <div className='main-container flex justify-center mt-2.5 md:mt-5'>
+            <div className='inner-container flex flex-row mb-1.5 gap-5 md:gap-10 place-items-center md:mb-3'>
                 <div>
               <h1 className='text-lg text-left md:text-2xl font-semibold'>{details.title}</h1>
               <p className='text-left'>{details.location}</p>
@@ -98,7 +99,7 @@ const featureList = details.features?.map((feature, index) => (
         {/* <img src={details.images[0]} alt={details.title} className="w-1/3 mx-auto" /> */}
         <div className='features-list text-center'>
             <h2 className='text-lg font-bold capitalize '>key features</h2>
-              <ul className='md: text-center gap-5 mx-auto'>
+              <ul className='text-left md:text-center gap-5 mx-auto'>
                 {featureList}
               </ul>
       </div>

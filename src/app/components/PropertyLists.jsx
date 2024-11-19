@@ -8,7 +8,7 @@ import Link from 'next/link'
 export default function PropertyLists() {
 
     const cards = properties.sort((x,y) => y.category - x.category).map((card,index) => (
-        <section key={index} className='rounded-md shadow-lg'>
+        <section key={index} className='rounded-md shadow-2xl m-auto'>
             <Link href={`/prop/${card.title.split(' ').join('-')}`} title={card.title} className='cursor-pointer'>
             <PropertyCard 
             title={card.title} 
@@ -29,7 +29,7 @@ export default function PropertyLists() {
         {/* <PropertyCard title="Penthouse In Ikoyi" type="Miniflat" pri="500,000"/> */}
     </div>
     <p className='flex items-center justify-center my-7'>
-    <Link href={'/prop'} ><span className='bg-black text-white rounded-3xl p-3 uppercase text-sm hover:bg-blue-900'>view more properties</span>
+    <Link href={'/prop'} ><span className='p-1.5 text-xs  md:text-sm md:bg-blue-200 border-2 border-blue-900 text-black rounded-md md:p-3 uppercase  hover:text-white hover:bg-blue-900'>view more properties</span>
     </Link>
     </p>
     </>

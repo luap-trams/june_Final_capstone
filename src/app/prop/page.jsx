@@ -19,7 +19,9 @@ export default function PropertyPage() {
     const cards = filterLists.length == 0 ?(
       <h1 className='flex items-center justify-center w-screen'>Oops, No results found. Explore other options or contact us for assistance.</h1>
     ) : filterLists.map((card,index) => (
-      <section key={index} className='rounded-lg shadow-2xl'>
+      
+      //This shows list of all the property you can search from */
+      <section key={index} className='rounded-lg shadow-xl m-auto'> 
       
       <Link href={`/prop/${card.title.split(' ').join('-')}`} title={card.title} className='cursor-pointer'>
         <PropertyCard 
