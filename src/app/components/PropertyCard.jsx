@@ -4,28 +4,30 @@ import { Rating } from '@mui/material';
 
 import { properties } from '../data';
 
-const whatsApp = "+2348020817992";
-
 export default function PropertyCard({ rating, title, type, description, category, price, location, status }) {
   
-    // const isAvailable = properties.find(prop => prop.id === status)?.status === "available";
-    const isAvailable = status === "available";
+    const isAvailable = properties.find(prop => prop.status === status)?.status === "available";
+    // const isAvailable = status === "available";
   
   return (
     // Images Displayed in Flex-cols-3 for the Property List Page where you can perform search function
-    <div className='flex flex-col items-center'> 
-      
-      <div className='items-center relative'>
-        {/* <p className={`property-status absolute font-bold text-1xl uppercase ${isAvailable ? 'text-green-500' : 'text-red-500'} text-center rounded-lg`}>{status}</p> */}
-      <p className={`property-status font-bold text-xs uppercase absolute pointer-events: auto ${isAvailable ? 'text-white bottom-1 right-1 bg-blue-900 hover:bg-green-500 absolute' : 'text-white top-1 left-1 bg-red-600'} text-center rounded-md p-2`}>
-        <a href={`https://api.whatsapp.com/send?phone=${whatsApp}&text=Hello,%0A%0AI%27d%20love%20to%20view%20this%20property.%20When%20would%20be%20a%20good%20time%20to%20arrange%20a%20visit?`} target="_blank"> 
-  {isAvailable ? "book a viewing" : "Unavailable"}</a></p>
+    <div className='flex flex-col items-center '> 
+      <div className='group items-center relative'>
+        
+      {/* <p className={`property-status absolute font-bold text-1xl uppercase ${isAvailable ? 'text-green-500' : 'text-red-500'} text-center rounded-lg`}>{status}</p> */}
+      <a href='https://api.whatsapp.com/send?phone=2348020817992&text=Hello,%0A%0AI%27d%20love%20to%20view%20this%20property.%20When%20would%20be%20a%20good%20time%20to%20arrange%20a%20visit?' target="_blank"> 
+      <p className={`property-status font-bold text-xs uppercase absolute  w-full ${isAvailable ? 'text-white bottom-0 bg-blue-900 group-hover:bg-green-600' : 'text-white bottom-0 bg-red-600'} text-center p-2`}>
+        
+ 
+        {isAvailable ? "schedule an inspection" : status } 
+      </p>
+        </a>
 
       <Image src={`/images/${title.split(' ').join('')}.jpeg`} alt={title} width={'400'} height={'400'} className='rounded-t-md'/>
       </div>
-   
+      {/* Material UI rating component */}
       
-     {/* Property Details */}
+      {/* Property Details */}
       <p className='m-3'>
         <Rating name='half-rating-read' defaultValue={rating} precision={0.5} max={5} readOnly  className='text-lg'/>
       </p>

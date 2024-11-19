@@ -5,11 +5,8 @@ import Link from 'next/link'
 import PropertyCard from '@/app/components/PropertyCard'
 import { useContext } from 'react'
 import { SidebarContext } from "@/app/providers"
-import { FaCheck } from 'react-icons/fa';
-import { FaHeart } from 'react-icons/fa';
-import { FaWhatsapp } from 'react-icons/fa';
-import { FaPhone } from 'react-icons/fa';
-import { FaEnvelope } from 'react-icons/fa';
+import { FaCheck, FaHeart, FaWhatsapp, FaPhone, FaEnvelope } from 'react-icons/fa';
+
 // import { AiFillEnvironment } from 'react-icons/ai';
 
 export default function PropDetails({params}) {
@@ -36,7 +33,9 @@ export default function PropDetails({params}) {
     rating={card.rating} 
     location={card.location} 
     category={card.category} 
+    status={card.status} 
     price={card.price}/>
+    
   </Link>);
 
 const otherImages = details.images?.map((image, index) => ( <img src={image} alt={`${details.title} image ${index + 1}`} className='rounded-lg shadow-2xl mx-auto p-1' key={index} />
@@ -64,13 +63,22 @@ const featureList = details.features?.map((feature, index) => (
     </button>
     <p className="absolute mb-8 -ml-4  hidden group-hover:block bg-green-500 text-white p-1 rounded-lg">LIKE ME</p>
 
-                <button><a href={`mailto:luap.trams@gmail.com`} target="_blank"> 
-                <FaEnvelope className='email-button bg-blue-400 text-black hover:bg-blue-400 p-1.5 text-3xl hover:text-white rounded-md'/></a></button>
-                <button><a href={`https://api.whatsapp.com/send?phone=2348020817992&text=Hello,%0A%0AI%27d%20love%20to%20view%20this%20property.%20When%20would%20be%20a%20good%20time%20to%20arrange%20a%20visit?`} target="_blank"> 
-                <FaWhatsapp className='whatsapp-button bg-blue-400 text-black hover:bg-green-600 p-1.5 text-3xl hover:text-white rounded-md'/></a></button>
-                <button><a href={`tel:+2348020817992`} target="_blank">
-        <FaPhone className="phone-button bg-blue-400 hover:text-white p-1.5 text-3xl rounded-md" />
-      </a> </button>
+                <button>
+                  <a href={`mailto:luap.trams@gmail.com`} target="_blank"> 
+                <FaEnvelope className='email-button bg-blue-400 text-black hover:bg-blue-400 p-1.5 text-3xl hover:text-white rounded-md'/></a>
+                </button>
+
+                <button>
+                  <a href={`https://api.whatsapp.com/send?phone=2348020817992&text=Hello,%0A%0AI%27d%20love%20to%20view%20this%20property.%20When%20would%20be%20a%20good%20time%20to%20arrange%20a%20visit?`} target="_blank"> 
+                <FaWhatsapp className='whatsapp-button bg-blue-400 text-black hover:bg-green-600 p-1.5 text-3xl hover:text-white rounded-md'/></a>
+                </button>
+                
+                <button>
+                  <a href={`tel:+2348020817992`} target="_blank">
+                <FaPhone className="phone-button bg-blue-400 hover:text-white p-1.5 text-3xl rounded-md" />
+                  </a> 
+                </button>
+                
               </div>
               <button>{details.price}</button>
       <div>

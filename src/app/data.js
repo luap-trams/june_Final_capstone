@@ -47,7 +47,7 @@ export const properties = [
     type: "For Sale",
     location: "Pinnock Beach Estate, Lekki, Lagos.",
     price: '₦165,000,000',
-    status: "",
+    status: "off market",
     rating: 4.9,
     features:[
       "All Rooms Ensuite",
@@ -235,7 +235,7 @@ export const properties = [
     type: "For Sale",
     location: "Banana Island, Lagos",
     price: '₦5,000,000,000',
-    status: "Available",
+    status: "available",
     rating: 5
   },
   {
