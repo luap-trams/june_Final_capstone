@@ -12,7 +12,7 @@ export default function Navibar() {
     
     <nav className='bg-blue-900 w-full'>
         {/* <ul className=' flex justify-around uppercase items-center h-40 bg-green-400 text-white text-sm tracking-wider'></ul> */}
-        <ul className='hidden md:flex justify-around uppercase items-center h-32 w-full mx-auto bg-blue-900 text-white text-sm tracking-wider'>
+        <ul className='hidden md:flex justify-around uppercase gap-10 items-center h-32 w-full mx-auto bg-blue-900 text-white text-sm tracking-wider'>
         <Image src={'/logo.jpeg'} alt={'white logo'} width={'100'} height={'100'} className='flex justify-items-end' />
             <Link href={'/'}> 
                 <li className='bg-blue-900 h-8 w-34 px-3 py-1.5 rounded-full hover:bg-blue-500'>home</li>

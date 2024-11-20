@@ -3,6 +3,7 @@ import PropertyLists from './components/PropertyLists'
 import Header from './components/Header'
 import "@fontsource/roboto/latin-400.css";
 import "@fontsource/roboto/latin-500.css";
+import { FaStar } from 'react-icons/fa';
 import { FaHeart } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 import { FaPhone } from 'react-icons/fa';
@@ -12,34 +13,33 @@ import { FaEnvelope } from 'react-icons/fa';
 export default function Home() {
   return (
     // <div className='bg-amber-600 h-screen text-white flex flex-row justify-center items-center text-6xl'>
-  <div className='md:text-center'>
-      
+  <div className='main-1 mt-16 md:mt-0 w-screen'>
 
-          <h1 className='text-4xl md:text-8xl py-20 inline-flex justify-center text-center text-blue-900 font-bold'>Unlock the door to your dream home</h1>
-  
-
-        <div className='inline-flex flex-wrap justify-center gap-4 w-full'>
-          <Image src={'/aboutcover.jpeg'} alt={'home cover'} width={'1400'} height={'1500'}/>
-          
-       
-         
+        <div className='inner-1 w-full  flex justify-center items-center '>
+              <Image src={'/images/PenthouseInLekkiCopy.jpeg'} alt={'home cover'} width={'1500'} height={'1300'} className='flex justify-items-center items-center  m-auto'
+              />
+              <p className='text-white text-lg p-4 rounded-none md:text-center md:text-6xl  w-4/6 uppercase bg-blue-900 md:rounded-lg md:p-14  bg-opacity-50  absolute m-auto h-auto font-semibold '>Unlock the door<br /><span className='text-center text-xs md:text-3xl font-thin '>to your dream home</span></p>
           {/* <Image src={'https://images.pexels.com/photos/7447654/pexels-photo-7447654.jpeg'} alt={'Skycrapper'} width={'200'} height={'200'}/> */}
-        
         </div>
 
-          <div className='py-3'>
-          <h2 className='flex justify-center text-center text-2xl md:text-4xl px-4'>Exclusive Luxury Properties in Lagos</h2>
-          <p className='flex justify-center text-center text-sm md:text-md'>Curated selection of the market's finest listings, chosen just for you.</p>
-
-          <div className='flex items-center justify-center my-2'><span className='bg-blue-900 text-white rounded-t-2xl p-2.5 uppercase'>Top Picks</span>
-          </div>
-
-          </div>
-          <PropertyLists />
-          <Header />
+        <div className='inner-2 py-3 mt-3 md:mt-10'>
+          <h2 className='flex justify-center text-center text-2xl px-2 md:text-5xl md:px-4 font-extrabold'>Exclusive Luxury Properties in Lagos</h2>
+          <h2 className='flex justify-center text-center text-xs mb-4 md:text-xl md:mb-10'>Curated selection of the market's finest listings, chosen just for you.</h2>
+          <p className='flex items-center justify-center -mb-2 mt-1 md:-mb-1.5 md:mt-2'><span className='text-xs px-2 py-1 md:text-base bg-blue-900 text-white rounded-t-2xl md:p-2.5  uppercase'>Top Picks</span></p>
+        </div>
+        
+{/* PropertyList component on main div */}
+        <PropertyLists /> 
+          {/* <Header /> */}
           
-      
-      </div>
+          {/* <div className='relative group h-24 w-24 bg-blue-600 rounded-full  m-auto'> */}
+
+            {/* <FaStar size={25} color='white' className='absolute bottom-9 left-9 hidden group-hover:block'/> */}
+            {/* <p className=' absolute bottom-full mb-1 hidden group-hover:block text-xs text-white bg-black px-2 py-1 rounded'>Favourites</p> */}
+          
+          {/* </div> */}
+
+  </div>
   
   )
 }

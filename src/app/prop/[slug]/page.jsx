@@ -50,7 +50,7 @@ const featureList = details.features?.map((feature, index) => (
 
   return (
     <div className='text-center rounded-md'>
-        <div className='main-container flex justify-center mt-2.5 md:mt-5'>
+        <div className='main-container flex justify-center mt-20 md:mt-5'>
             <div className='inner-container flex flex-row mb-1.5 gap-5 md:gap-10 place-items-center md:mb-3'>
                 <div>
               <h1 className='text-lg text-left md:text-2xl font-semibold'>{details.title}</h1>
