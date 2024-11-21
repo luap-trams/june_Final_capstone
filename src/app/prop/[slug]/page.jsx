@@ -35,6 +35,7 @@ export default function PropDetails({params}) {
     location={card.location} 
     category={card.category} 
     status={card.status} 
+    paymentfrequency={card.paymentfrequency} 
     price={card.price}/>
     
   </Link>);

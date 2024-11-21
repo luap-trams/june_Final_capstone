@@ -17,7 +17,8 @@ export default function PropertyLists() {
             rating={card.rating} 
             location={card.location} 
             category={card.category} 
-            status={card.status}/>
+            status={card.status}
+            paymentfrequency={card.paymentfrequency}/>
             </Link>
         </section>
     )).slice(0,3)

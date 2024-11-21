@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <div className='h-10 w-full bg-black text-white sticky top-0 z-10'>
+    <div className='h-10 w-full bg-black text-white sticky top-0 z-10 drop-shadow-2xl'>
       <p className='text-center pt-2 uppercase hidden'>smartoptions property solutions limited</p>
       
     </div>

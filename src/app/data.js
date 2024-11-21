@@ -7,8 +7,10 @@ export const properties = [
     category: "Duplex",
     type: "For Sale",
     location: "Ikoyi, Lagos",
+    state: "Lagos",
+    paymentfrequency: "one-off",
     price: '₦220,000,000', // In Naira
-    status: "rented",
+    status: "occupied",
     rating: 5,
     features: [
       "Fitted Kitchen with accessories",
@@ -27,6 +29,8 @@ export const properties = [
     category: "Duplex",
     type: "For Sale",
     location: "Lekki Phase 1, Lagos",
+    state: "Lagos",
+    paymentfrequency: "one-off",
     price: '₦132,000,000',
     status: "available",
     rating: 4.9,
@@ -45,7 +49,10 @@ export const properties = [
     description: "Discover this stunningly finished 5-bedroom detached duplex nestled in the prestigious Pinnock Beach Estate, Lekki, Lagos. Featuring spacious living areas, a fully equipped kitchen, en-suite bedrooms with walk-in closets, and premium bathrooms, this home offers luxurious comfort and style.",
     category: "Duplex",
     type: "For Sale",
+    tenure: "one off",
     location: "Pinnock Beach Estate, Lekki, Lagos.",
+    state: "Lagos",
+    paymentfrequency: "one-off",
     price: '₦165,000,000',
     status: "off market",
     rating: 4.9,
@@ -63,8 +70,10 @@ export const properties = [
     images:["/images/CommercialSpaceInIkeja.jpeg","/images/DetachedHouseInGbagada.jpeg","/images/PenthouseInLekki.jpeg"],
     description: "This exquisite penthouse offers an unparalleled living experience in one of Lagos' most prestigious neighborhoods. Nestled within a secure gated community, the property boasts stunning panoramic views of the city and ocean.",
     category: "Apartment",
-    type: "For Sale",
+    type: "For Rent",
     location: "Lekki, Lagos",
+    state: "Lagos",
+    paymentfrequency: "annually",
     price: '₦30,000,000', // In Naira
     status: "available",
     rating: 4.5,
@@ -77,6 +86,8 @@ export const properties = [
     category: "Luxury Villa",
     type: "For Rent",
     location: "Lekki Phase 1, Lagos",
+    state: "Lagos",
+    paymentfrequency: "monthly",
     price: '₦1,500,000', // Monthly rent
     status: "sold",
     rating: 4.5,
@@ -94,6 +105,8 @@ export const properties = [
     category: "House",
     type: "For Rent",
     location: "Surulere, Lagos",
+    state: "Lagos",
+    paymentfrequency: "monthly",
     price: '₦250,000', // Monthly rent
     status: "available",
     rating: 4.5,
@@ -106,6 +119,8 @@ export const properties = [
       category: "Apartment",
       type: "For Sale",
       location: "Lekki Phase 1, Lagos",
+      state: "Lagos",
+      paymentfrequency: "one-off",
       price: '₦165,000,000',
       status: "available",
       rating: 4.8,
@@ -126,6 +141,8 @@ export const properties = [
         category: "Duplex",
         type: "For Sale",
         location: "Osapa London, Lekki, Lagos",
+        state: "Lagos",
+        paymentfrequency: "one-off",
         price: '₦395,000,000',
         status: "available",
         rating: 5,
@@ -146,6 +163,8 @@ export const properties = [
           category: "Duplex",
           type: "For Rent",
           location: "Ikate Lekki, Lagos",
+          state: "Lagos",
+        paymentfrequency: "annually",
           price: '₦9,000,000',
           status: "available",
           rating: 5,
@@ -168,6 +187,8 @@ export const properties = [
     category: "Office",
     type: "For Sale",
     location: "Ikeja GRA, Lagos",
+    state: "Lagos",
+        paymentfrequency: "one-off",
     price: '₦600,000,000',
     status: "available",
     rating: 4.5
@@ -179,6 +200,8 @@ export const properties = [
     category: "Apartment",
     type: "For Rent",
     location: "Shomolu, Lagos",
+    state: "Lagos",
+        paymentfrequency: "monthly",
     price: '₦120,000', // Monthly rent
     status: "available",
     rating: 5.5
@@ -190,6 +213,8 @@ export const properties = [
     category: "Land",
     type: "For Sale",
     location: "Ajah, Lagos",
+    state: "Lagos",
+        paymentfrequency: "one-off",
     price: '₦70,000,000',
     status: "available",
     rating: 3.5
@@ -201,6 +226,8 @@ export const properties = [
     category: "Commercial",
     type: "For Rent",
     location: "Alaba International, Lagos",
+    state: "Lagos",
+        paymentfrequency: "monthly",
     price: '₦200,000', // Monthly rent
     status: "available",
     rating: 4.5
@@ -212,6 +239,8 @@ export const properties = [
     category: "House",
     type: "For Sale",
     location: "Gbagada, Lagos",
+    state: "Lagos",
+        paymentfrequency: "one-off",
     price: '₦250,000,000',
     status: "available",
     rating: 4.5
@@ -223,6 +252,8 @@ export const properties = [
     category: "Apartment",
     type: "For Rent",
     location: "Ogudu, Lagos",
+    state: "Lagos",
+        paymentfrequency: "monthly",
     price: '₦100,000', // Monthly rent
     status: "available",
     rating: 4.5
@@ -234,6 +265,8 @@ export const properties = [
     category: "House",
     type: "For Sale",
     location: "Banana Island, Lagos",
+    state: "Lagos",
+        paymentfrequency: "one-off",
     price: '₦5,000,000,000',
     status: "available",
     rating: 5
@@ -242,9 +275,11 @@ export const properties = [
     title: "Luxury Villa In Banana Island",
     // images:["/ab012.jpeg", "/ab012.jpeg", "/ab012.jpeg"],
     description: "Well-equipped office space with ample natural light and secure parking.",
-    category: "Office",
+    category: "Villa",
     type: "For Rent",
     location: "Lekki Phase 1, Lagos",
+    state: "Lagos",
+        paymentfrequency: "monthly",
     price: '₦1,000,000', // Monthly rent
     status: "available",
     rating: 4.5
@@ -256,6 +291,8 @@ export const properties = [
     category: "Apartment",
     type: "For Sale",
     location: "Ikoyi, Lagos",
+    state: "Lagos",
+        paymentfrequency: "one-off",
     price: '₦4,000,000,000',
     status: "sold",
     rating: 4.1
@@ -267,8 +304,10 @@ export const properties = [
     category: "House",
     type: "For Rent",
     location: "Surulere, Lagos",
+    state: "Lagos",
+        paymentfrequency: "monthly",
     price: '₦250,000', // Monthly rent
-    status: "sold",
+    status: "unavailable",
     rating: 4.5
   },
   {
@@ -278,6 +317,8 @@ export const properties = [
     category: "Office",
     type: "For Sale",
     location: "Ikeja GRA, Lagos",
+    state: "Lagos",
+        paymentfrequency: "one-off",
     price: '₦600,000,000',
     status: "available",
     rating: 4.5
@@ -288,8 +329,11 @@ export const properties = [
     description: "Compact and affordable studio apartment for young professionals or students.",
     category: "Apartment",
     type: "For Rent",
+    location: "Onikoyi, Yaba",
+    state: "Lagos",
+        paymentfrequency: "monthly",
     price: '₦120,000', // Monthly rent
-    status: "sold",
+    status: "unavailable",
     rating: 4.2
   },
   {
@@ -299,6 +343,8 @@ export const properties = [
     category: "Land",
     type: "For Sale",
     location: "Ajah, Lagos",
+    state: "Lagos",
+        paymentfrequency: "one-off",
     price: '₦70,000,000',
     status: "available",
     rating: 4.5
