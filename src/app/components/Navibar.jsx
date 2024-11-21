@@ -12,22 +12,22 @@ export default function Navibar() {
     
     <nav className='bg-blue-900 w-full'>
         {/* <ul className=' flex justify-around uppercase items-center h-40 bg-green-400 text-white text-sm tracking-wider'></ul> */}
-        <ul className='hidden md:flex justify-around uppercase gap-10 items-center h-32 w-full mx-auto bg-blue-900 text-white text-sm tracking-wider'>
-        <Image src={'/logo.jpeg'} alt={'white logo'} width={'100'} height={'100'} className='flex justify-items-end' />
+        <ul className='hidden md:flex justify-around uppercase gap-10 items-center h-28 w-full mx-auto bg-blue-900 text-white text-sm tracking-wider'>
+        <Image src={'/logo.jpeg'} alt={'white logo'} width={'80'} height={'80'} className='flex justify-items-end' />
             <Link href={'/'}> 
-                <li className='bg-blue-900 h-8 w-34 px-3 py-1.5 rounded-full hover:bg-blue-500'>home</li>
+                <li className='bg-blue-900 h-8 w-34 px-3 py-1.5 rounded-md hover:bg-blue-500'>home</li>
             </Link>
             <Link href={'/about'}> 
-                <li className='  bg-blue-900 h-8 w-34 px-3 py-1.5 rounded-full hover:bg-blue-500'>about us</li>
+                <li className='  bg-blue-900 h-8 w-34 px-3 py-1.5 rounded-md hover:bg-blue-500'>about us</li>
             </Link>
             {/* <Link href={'/location'}> 
                 <li className='bg-blue-900 h-8 w-34 px-3 py-1.5 rounded-full hover:bg-blue-500'>our locations</li>
             </Link> */}
             <Link href={'/prop'}> 
-                <li className='bg-blue-900 h-8 w-34 px-3 py-1.5 rounded-full hover:bg-blue-500'>property directory</li>
+                <li className='bg-blue-900 h-8 w-34 px-3 py-1.5 rounded-md hover:bg-blue-500 hover:shadow-2xl'>property directory</li>
             </Link>
             <Link href={'/contact'}> 
-                <li className='bg-blue-900 h-8 w-34 px-3 py-1.5 rounded-full hover:bg-blue-500'>contact us</li>
+                <li className='bg-blue-900 h-8 w-34 px-3 py-1.5 rounded-md hover:bg-blue-500'>contact us</li>
             </Link>
             {/* <Link href={'/wishes'}> 
                 <li className='bg-blue-500 h-14 w-42 px-2 py-3 rounded-full hover:text-red-500 text-center'><FaHeart /> 
@@ -36,7 +36,7 @@ export default function Navibar() {
             <Link href={'/wishes'}>
             <div className='flex'>
             <HeartIcon strokeWidth={0.5} className="w-14 h-14 rounded-full text-red-300 text-3xl bg-transparent hover:text-red-300 hover:bg-opacity-90" />
-                <li className=' text-white text-lg -mt-3  -ml-2.5 font-thin rounded-full bg-red-400 w-7 text-center  h-7'>{val}</li>
+                <li className=' text-white text-lg -mt-3  -ml-2.5 rounded-full bg-red-400 w-7 text-center font-semibold h-7'>{val}</li>
             </div>
             </Link>
 
