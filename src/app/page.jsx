@@ -8,6 +8,7 @@ import { FaHeart } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 import { FaPhone } from 'react-icons/fa';
 import { FaEnvelope } from 'react-icons/fa';
+import { Roboto } from 'next/font/google';
 
 
 export default function Home() {
@@ -30,6 +31,17 @@ export default function Home() {
         
 {/* PropertyList component on main div */}
         <PropertyLists /> 
+
+        <div className='newsletter h-44 w-full pt-8 bg-blue-400 m-auto text-center'>
+          <p className='text-md md:text-2xl font-semibold'>Get the latest news, expert tips, and exclusive opportunities.</p>
+
+<form action="https://formsubmit.co/3084d15bc47759fb2b4ce5bf4dfd3a91" method="POST">
+          <input className='h-7 w-3/6 text-xs mt-3 p-1.5 md:text-lg md:h-12 md:w-2/6 md:mt-5 md:p-3 'type='email' id='email' name='email' placeholder='Subscribe for newsletter' />
+          <label htmlFor="email" id='email' name='email'></label>
+          <button className=' text-white text-xs h-7 w-20  md:text-base md:h-12 md:w-40 md:mb-2 bg-blue-900 hover:bg-blue-800 text-center uppercase' type='submit' name='Sign up' id='Signup'>Sign up</button>
+</form>
+          <small className='sm:mb-2 md:mb-7 md:pb-3'>By signing up, you agree to receive marketing emails from SmartOptions. Unsubscribe at any time.</small>
+        </div>
           {/* <Header /> */}
           
           {/* <div className='relative group h-24 w-24 bg-blue-600 rounded-full  m-auto'> */}
