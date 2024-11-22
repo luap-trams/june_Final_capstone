@@ -36,7 +36,7 @@ export default function Home() {
           <p className='text-md md:text-2xl font-semibold'>Get the latest news, expert tips, and exclusive opportunities.</p>
 
 <form action="https://formsubmit.co/3084d15bc47759fb2b4ce5bf4dfd3a91" method="POST">
-          <input className='h-7 w-3/6 text-xs mt-3 p-1.5 md:text-lg md:h-12 md:w-2/6 md:mt-5 md:p-3 'type='email' id='email' name='email' placeholder='Subscribe for newsletter' />
+          <input className='h-7 w-3/6 text-xs mt-3 p-1.5 md:text-lg md:h-12 md:w-2/6 md:mt-5 md:p-3 'type='email' id='email' name='email' placeholder='Subscribe to newsletter' />
           <label htmlFor="email" id='email' name='email'></label>
           <button className=' text-white text-xs h-7 w-20  md:text-base md:h-12 md:w-40 md:mb-2 bg-blue-900 hover:bg-blue-800 text-center uppercase' type='submit' name='Sign up' id='Signup'>Sign up</button>
 </form>
