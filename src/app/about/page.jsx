@@ -19,11 +19,11 @@ const AboutUs = () => {
 
    
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-5">
-        <div className='bg-blue-400 bg-opacity-100 hover:bg-opacity-80 p-5 rounded-md'>
-          <div className="flex items-center mb-4">
+      <div className='bg-blue-400 bg-opacity-100 hover:bg-opacity-80 p-5 rounded-md'>
+      <div className="flex items-center mb-4">
             <FaUsers className="text-7xl mr-4 text-blue-700" />
-            <h3 className="text-2xl font-semibold">Who We Are</h3>
-          </div>
+        <h3 className="text-2xl font-semibold">Who We Are</h3>
+      </div>
           <p>
             SmartOptions Property Solutions Limited is a dynamic real estate management company dedicated to optimizing the potential of your real estate investments. Whether you're an individual property owner, an investor, or a commercial enterprise, our team of experienced professionals is here to ensure your properties are managed efficiently and profitably.
           </p>

@@ -17,7 +17,7 @@ export default function Home() {
   <div className='main-1 mt-16 md:mt-0 w-screen'>
 
         <div className='inner-1 w-full  flex justify-center items-center '>
-              <Image src={'/images/PenthouseInLekkiCopy.jpeg'} alt={'home cover'} width={'1500'} height={'1300'} className='flex justify-items-center items-center  m-auto'
+              <Image src={'/images/PenthouseInLekkiCopy.jpeg'} alt={'home cover'} width={'1500'} height={'1300'} loading="lazy" className='flex justify-items-center items-center  m-auto'
               />
               <p className='text-white text-lg p-4 rounded-none md:text-center md:text-6xl  w-4/6 uppercase bg-blue-900 md:rounded-lg md:p-14  bg-opacity-50  absolute m-auto h-auto font-semibold '>Unlock the door<br /><span className='text-center text-xs md:text-3xl font-thin '>to your dream home</span></p>
           {/* <Image src={'https://images.pexels.com/photos/7447654/pexels-photo-7447654.jpeg'} alt={'Skycrapper'} width={'200'} height={'200'}/> */}
@@ -36,9 +36,9 @@ export default function Home() {
           <p className='text-md md:text-2xl font-semibold'>Get the latest news, expert tips, and exclusive opportunities.</p>
 
 <form action="https://formsubmit.co/3084d15bc47759fb2b4ce5bf4dfd3a91" method="POST">
-          <input className='h-7 w-3/6 text-xs mt-3 p-1.5 md:text-lg md:h-12 md:w-2/6 md:mt-5 md:p-3'type='email' id='email' name='email' placeholder='Subscribe to newsletter' required />
           <label htmlFor="email" id='email' name='email'></label>
-          <button className=' text-white text-xs h-7 w-20  md:text-base md:h-12 md:w-40 md:mb-2 bg-blue-900 hover:bg-blue-800 text-center uppercase' type='submit' name='Sign up' id='Signup'>Sign up</button>
+          <input className='h-7 w-3/6 text-xs mt-3 p-1.5 md:text-lg md:h-11 md:w-2/6 md:mt-5 md:p-3'type='email' id='email' name='email' placeholder='Subscribe to newsletter' required />
+          <button className=' text-white text-xs h-7 w-20 p-1.5 md:text-base md:h-11 md:w-40 md:mb-2 md:p-3 bg-blue-900 hover:bg-blue-800 text-center uppercase' type='submit' name='Sign up' id='Signup'>Sign up</button>
 </form>
           <small className='sm:mb-2 md:mb-7 md:pb-3'>By signing up, you agree to receive marketing emails from SmartOptions. Unsubscribe at any time.</small>
         </div>
