@@ -5,12 +5,16 @@ import Image from "next/image"
 import { FaHeart } from 'react-icons/fa';
 
 export default function WishesPage() {
-    const { propItem, setPropItem } = useContext(SidebarContext)
+    const { propItem, setPropItem, val, setVal  } = useContext(SidebarContext)
 
     const handleRemoveWish = (title) => {
         const updatedList = propItem.filter(prop => prop.title !== title);
         setPropItem(updatedList); 
+        setVal(prevVal => prevVal - 1);
+       
     }
+
+    
 
     return (
         <div className="main-div for comparing favorites: p-2 h-screen text-center">
