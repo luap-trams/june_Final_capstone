@@ -4,6 +4,7 @@ import { SidebarContext } from "../providers"
 import Image from "next/image"
 import { FaHeart } from 'react-icons/fa';
 
+
 export default function WishesPage() {
     const { propItem, setPropItem, val, setVal  } = useContext(SidebarContext)
 
@@ -11,14 +12,10 @@ export default function WishesPage() {
         const updatedList = propItem.filter(prop => prop.title !== title);
         setPropItem(updatedList); 
         setVal(prevVal => prevVal - 1);
-       
     }
-
-    
-
     return (
         <div className="main-div for comparing favorites: p-2 h-screen text-center">
-          {propItem.length == 0 ?
+          {propItem.length === 0 ?
             (
                 <h2>Your list is currently empty. Click the heart icon next to properties to add them.</h2>
             )

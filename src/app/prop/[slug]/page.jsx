@@ -3,22 +3,32 @@ import React from 'react'
 import { properties } from '@/app/data'
 import Link from 'next/link'
 import PropertyCard from '@/app/components/PropertyCard'
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { SidebarContext } from "@/app/providers"
 import { FaCheck, FaHeart, FaWhatsapp, FaPhone, FaEnvelope } from 'react-icons/fa';
 
 // import { AiFillEnvironment } from 'react-icons/ai';
 
-export default function PropDetails({params}) {
-
-    const {setVal,propItem, setPropItem} = useContext(SidebarContext)
+export default function PropDetails({ params }) {
+  const { propItem, setPropItem, val, setVal } = useContext(SidebarContext);
+  const [duplicateMessage, setDuplicateMessage] = useState(false);
     
     const details = properties.find(prop => prop.title.split(' ').join('-') == params.slug)
 
-    function handlePropAdd(){
-      setVal(prev => prev + 1)
-      setPropItem([...propItem, {title: details.title, type: details.type, description: details.description, price: details.price}])
-    }
+    const handlePropAdd = () => {
+      const existingItem = propItem.find(item => item.title === details.title);
+      if (!existingItem) {
+        setPropItem([...propItem, details]);
+        setVal(prevVal => prevVal + 1);
+        setDuplicateMessage(false); // Clear duplicate message
+      } else {
+        setDuplicateMessage(true);
+      }
+    };
+
+
+
+
 
     const relatedProp = properties.filter
     ((card => card.category == details.category && details.title !== card.title))
@@ -64,7 +74,11 @@ const featureList = details.features?.map((feature, index) => (
         <FaHeart className="bg-blue-400 hover:bg-red-400 p-1.5 text-3xl hover:text-white rounded-md" />
     </button>
     <p className="absolute mb-8 -ml-4  hidden group-hover:block bg-green-500 text-white p-1 rounded-lg">LIKE ME</p>
-
+    {duplicateMessage && (
+          <div className="alert alert-danger absolute right-80 mb-8 bg-red-500 rounded-sm text-white p-1.5" role="alert">
+            Sorry, but this property has been added already.
+          </div>
+        )}
                 <button>
                   <a href={`mailto:luap.trams@gmail.com`} target="_blank"> 
                 <FaEnvelope className='email-button bg-blue-400 text-black hover:bg-blue-400 p-1.5 text-3xl hover:text-white rounded-md'/></a>

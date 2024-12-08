@@ -10,7 +10,7 @@ const SidebarProvider = ({ children }) => {
     const [propItem, setPropItem] = useState([])
 
     return (
-        <SidebarContext.Provider value={{val,setVal,propItem, setPropItem}}>
+        <SidebarContext.Provider value={{val, setVal, propItem, setPropItem}}>
             { children }
         </SidebarContext.Provider>
     )

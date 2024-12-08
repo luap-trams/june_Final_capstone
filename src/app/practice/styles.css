@@ -1,0 +1,157 @@
+* {
+     padding: 0;
+    margin:0;
+
+} 
+/* .main_container  {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-items: start;
+    flex-direction: column;
+    margin-top: 20%;
+    background-color: azure;
+
+}
+.butt {
+    background-color: rgb(76, 76, 225);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 3px;
+    width: 100px; */
+}
+/* input:focus  {
+    border-color: red;
+    border-width: 1px;
+    outline: none;
+} */ 
+
+
+
+/* body {
+    background-color: #E0E0E2;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+}
+
+li {
+    display: inline;
+}
+
+main {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+h1 {
+    color: #721817;
+}
+
+h2 {
+    color: #721817;
+}
+
+.center-text {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 > span {
+    color: #FA9F42;
+    font-size: 0.75em;
+}
+
+form > div {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#copyright {
+    padding-top: 12px;
+    font-size: 0.75em;
+}
+
+input:focus:invalid {
+    color: red;
+    border: red 3px solid;
+}
+
+video {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 4px;
+    background-color: rgb(172, 172, 247);
+    float: left;
+    width: 250px;
+ */
+
+
+   .main {
+    background-color: #FA9F42;
+    height: 1000px;
+    width: 1000px;
+    padding: 50px;
+    margin: 10px;
+    /* position: relative; */
+   }
+    img {
+        display: block;
+        position: relative;
+        
+
+    }
+
+    .inner{
+        /* background-color: #fa428f; */
+        position: absolute;
+        padding: 10px;
+        opacity:1;
+    
+    }
+
+  /* p{
+        color: white;
+        background-color: aquamarine;
+        opacity: 95;
+        position: absolute;
+        z-index:auto;
+    } */
+
+    input {
+        box-sizing: border-box;
+    }
+
+    #message {
+        background-color: rgb(159, 160, 243);
+        border: blue;
+        padding: 4px;
+        margin: 4px;
+        color: white;
+        height: fit-content;
+        width:fit-content;
+        text-align: left;
+        display:flex;
+        flex-direction: row;
+
+    }
+    .message {
+        background-color: #FA9F42;
+        height: fit-content;
+        width:fit-content;
+    }

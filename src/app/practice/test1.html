@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body className="w-screen h-screen">
+    
+    <form>
+        
+        <div className="bg-blue-400 m-auto flex justify-center place-content-center">
+            <p>
+        <label for='username' name='username'>Username</label><br>
+        <input type='text' id='username' name='username' required >
+    </p>
+       
+        <p>
+        <label for='passw' name='password'>Password</label><br>
+        <input type='password' id='passw' name='password' required minlength="2" maxlength="8">
+    </p>
+       
+
+        <button type="submit">Log in</button>
+   
+</div>
+<hr>
+<!-- (div>label+input)*4 -->
+
+<div>
+    <label for="email" name="email">Email Address</label>
+    <input type="email" id="email" name="email">
+</div>
+<div>
+    <label for="booking" name="bookings">Date of Booking</label>
+    <input type="date" id="booking" name="booking01">
+</div>
+<div>
+    <label for="pax" name="guest">Number of people</label>
+    <input type="number" id="pax" name="guest" min="1" max="8">
+</div>
+<div>
+    <input type="checkbox" name="check" id="checked">
+    <label for="checked" name="check">I agree to the cancellation policy</label>
+</div>
+
+<div class="message">
+    <label for="message" name="message" >Message</label><br>
+    <input type="text" name="text" id="message" placeholder="Enter your message here">
+</div>
+</form>
+
+<button type="button">Book now</button>
+
+<video src="/public/WomenLoveMenRespect.mp4" controls loop width="200px"></video>
+
+
+    <div class="main">
+       <br><img src="/public/images/PenthouseInLekkiCopy.jpeg" alt="landing image" width="1200" height="400">
+      <div class="inner">
+        <p class="text">I am learning software development</p>
+      </div>
+    </div>
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
