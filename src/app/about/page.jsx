@@ -8,7 +8,7 @@ const AboutUs = () => {
    
    
       <div className="text-center text-black p-10">
-        <h2 className="text-4xl font-bold mb-4">About Us</h2>
+        <h2 className="mt-12 text-2xl md:text-4xl font-bold mb-4 md:mt-6 ">About Us</h2>
         <p className="text-lg">
           Welcome to <strong>SmartOptions Property Solutions Limited!</strong>
         </p>
