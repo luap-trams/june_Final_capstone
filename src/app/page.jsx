@@ -39,7 +39,7 @@ export default function Home() {
          <div className=''> 
           <label htmlFor="email" id='email' name='email'></label>
           <input className='rounded-l-lg h-auto w-3/6 text-xs mt-3 p-1.5 md:text-lg md:h-11 md:w-2/6 md:mt-5 md:p-3'type='email' id='email' name='email' placeholder='Subscribe to newsletter' required />
-          <button className=' rounded-r-lg text-white text-xs h-auto w-20 p-1.5 md:text-base md:h-11 md:w-40 md:mb-2 md:p-3 bg-blue-900 hover:bg-blue-800 text-center uppercase' type='submit' name='Sign up' id='Signup'>subscribe</button>
+          <button className=' rounded-r-lg text-white text-xs h-auto w-24 p-1.5 md:text-base md:h-11 md:w-40 md:mb-2 md:p-3 bg-blue-900 hover:bg-blue-800 text-center uppercase' type='submit' name='Sign up' id='Signup'>subscribe</button>
           </div>
 </form>
           <small className='text-xs mb-2 md:mb-7 md:text-sm md:pb-3'>By signing up, you agree to receive marketing emails from SmartOptions. Unsubscribe at any time.</small>
