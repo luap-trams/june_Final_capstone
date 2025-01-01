@@ -27,7 +27,7 @@ export default function ContactPage() {
         </div>
         
         <div className="form-container flex-grow w-full md:w-1/2">
-          <form action="https://formsubmit.co/3084d15bc47759fb2b4ce5bf4dfd3a91" method="POST">
+          <form action="https://formsubmit.co/3084d15bc47759fb2b4ce5bf4dfd3a91" method="POST" name='cForm'>
             <div className="mb-4">
               <label for="name" className="block font-semibold mb-2 gap-4 ml-6">Full Name</label>
               <div className="flex items-center">
