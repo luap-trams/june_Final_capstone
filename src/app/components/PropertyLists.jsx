@@ -21,11 +21,11 @@ export default function PropertyLists() {
             paymentfrequency={card.paymentfrequency}/>
             </Link>
         </section>
-    )).slice(0,3)
+    )).slice(0,8)
   return (
     <>
 
-    <div className='grid md:grid-cols-3 gap-4 px-4 capitalize h-full rounded-sm'> {/* TOP PICKS*/}
+    <div className='grid md:grid-cols-2 gap-4 px-4 lg:grid-cols-3 lg:gap-5 xl:grid-cols-4 capitalize h-full rounded-sm'> {/* TOP PICKS*/}
     {cards}
         {/* <PropertyCard title="Penthouse In Ikoyi" type="Miniflat" pri="500,000"/> */}
     </div>

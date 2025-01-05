@@ -75,7 +75,7 @@ const featureList = details.features?.map((feature, index) => (
     </button>
     <p className="absolute mb-8 -ml-4  hidden group-hover:block bg-green-500 text-white p-1 rounded-lg">LIKE ME</p>
     {duplicateMessage && (
-          <div className="alert alert-danger absolute right-80 mb-8 bg-red-500 rounded-sm text-white p-1.5" role="alert">
+          <div className="alert alert-danger absolute left-auto mb-8  bg-red-500 rounded-sm text-white p-1.5" role="alert">
             Sorry, but this property has been added already.
           </div>
         )}
@@ -125,10 +125,10 @@ const featureList = details.features?.map((feature, index) => (
         </div> */}
 
       </div>
-            <div className='px-24 pb-6'>
-              <h2 className='text-2xl font-bold p-2'>Related properties</h2>
+            <div className='px-20 pb-6'>
+              <h2 className='text-lg mb-1 md:text-xl md:mb-2 lg:text-2xl lg:mb-3 font-bold p-2 xl:text-3xl xl:mb-4'>Related properties</h2>
 
-              <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'>
                 {relatedCard}
               </div>
             </div>

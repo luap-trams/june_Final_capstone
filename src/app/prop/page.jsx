@@ -50,7 +50,7 @@ export default function PropertyPage() {
 
     </div>
     
-    <div className='grid grid-cols-1 gap-4 px-8 py-16 bg-blue-200 h-full max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+    <div className='grid grid-cols-1 gap-4 px-8 py-16 bg-blue-200 h-full max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
     {cards}
     </div>
     </>

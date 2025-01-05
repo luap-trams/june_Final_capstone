@@ -38,7 +38,7 @@ export default function WishesPage() {
                     {propItem.map((prop, index) => (
                         <tr key={index} className="text-center">
 
-                        <td className="flex justify-center my-4"><Image src={`/images/${prop.title.split(' ').join('')}.jpeg`} alt={prop.title} width={'150'} height={'200'} /></td>
+                        <td className="flex justify-center md:my-10 lg:my-5 xl:my-2"><Image src={`/images/${prop.title.split(' ').join('')}.jpeg`} alt={prop.title} width={'150'} height={'200'} /></td>
                         <td>{prop.title}</td>
                         <td>{prop.type}</td>
                         <td>{prop.description}</td>

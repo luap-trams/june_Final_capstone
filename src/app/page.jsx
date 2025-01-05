@@ -17,9 +17,9 @@ export default function Home() {
   <div className='main-1 mt-16 md:mt-0 w-screen'>
 
         <div className='inner-1 w-full  flex justify-center items-center '>
-              <Image src={'/images/PenthouseInLekkiCopy.jpeg'} alt={'home cover'} width={'1500'} height={'1300'} loading="lazy" className='flex justify-items-center items-center  m-auto'
+              <Image src={'/images/PenthouseInLekkiCopy.jpeg'} alt={'home cover'} width={'2200'} height={'1300'} loading="lazy" className='flex justify-items-center items-center  m-auto'
               />
-              <p className='text-white text-lg p-4 rounded-none md:text-center md:text-6xl  w-4/6 uppercase bg-blue-900 md:rounded-lg md:p-14  bg-opacity-50  absolute m-auto h-auto font-semibold '>Unlock the door<br /><span className='text-center text-xs md:text-3xl font-thin '>to your dream home</span></p>
+              <p className='text-center text-white text-3xl p-4 rounded-none  md:text-5xl  w-4/6 uppercase bg-blue-900 md:rounded-lg md:p-14 lg:text-7xl xl:text-9xl bg-opacity-50  absolute m-auto h-auto font-semibold '>Unlock the door<br /><span className='text-center text-xs md:text-3xl font-thin '>to your dream home</span></p>
           {/* <Image src={'https://images.pexels.com/photos/7447654/pexels-photo-7447654.jpeg'} alt={'Skycrapper'} width={'200'} height={'200'}/> */}
         </div>
 

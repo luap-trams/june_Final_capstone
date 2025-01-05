@@ -6,8 +6,8 @@ import { FaLinkedin, FaInstagram, FaFacebook, FaGithub, FaTiktok } from 'react-i
 
 export default function Footer() {
   return (
-   <footer className='text-sm md:h-full bg-black text-white md:text-lg bottom-0 z-0'>
-    <div className='flex justify-around h-auto w-full m-auto'>
+   <footer className='bottom-0 z-0 text-sm md:h-full bg-black text-white md:text-lg '>
+    <div className='flex justify-around h-auto w-full m-auto '>
         
         <div className='text-sm mt-7 md:mt-7'>
         <Image src={'/logo_name.jpeg'} alt={'white logo'} width={'120'} height={'120'} className='flex justify-end place-items-center '/>
