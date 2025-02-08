@@ -1,4 +1,5 @@
 import { FaUsers, FaBullseye, FaBriefcase, FaHandHoldingUsd, FaPhone } from 'react-icons/fa';
+import Link from 'next/link';
 
 const AboutUs = () => {
   return (
@@ -49,10 +50,10 @@ const AboutUs = () => {
           </div>
           <ul className="list-disc pl-6">
             <li>
-              <strong>Comprehensive Property Management:</strong> From tenant relations and lease administration to maintenance and financial reporting, we handle every aspect of property management so you don’t have to.
+              <strong>Comprehensive Property Management:</strong> From tenant relations and lease administration to maintenance and financial reporting, we handle every aspect of property management so you don't have to.
             </li>
             <li>
-              <strong>Customized Solutions:</strong> We understand that every property and client is unique. That’s why we tailor our services to meet your specific needs and goals.
+              <strong>Customized Solutions:</strong> We understand that every property and client is unique. That's why we tailor our services to meet your specific needs and goals.
             </li>
             <li>
               <strong>Expertise and Innovation:</strong> Our team stays ahead of industry trends, utilizing the latest technologies and best practices to maximize the performance and value of your properties.
@@ -66,7 +67,10 @@ const AboutUs = () => {
             <h3 className="text-2xl font-semibold">Why Choose Us?</h3>
           </div>
           <p>
-            At SmartOptions Property Solutions Limited, we go beyond traditional property management. We are committed to delivering results that exceed expectations, ensuring that your investment is in the best possible hands. With our expert team by your side, you can enjoy peace of mind knowing that your property is being managed with the utmost care and professionalism.
+          At SmartOptions Property Solutions Limited, we don't just manage properties, we maximize their value. Our expert team ensures seamless tenant relations, proactive maintenance, and strategic investment growth, giving you peace of mind and higher returns. With a commitment to professionalism and attention to detail, we handle every aspect of your property with care. <br /><br />
+Partner with us today and experience hassle-free property management that delivers real results. <br />
+<br /><Link href={'/contact'} className='bg-blue-900 text-white p-2 rounded-sm'>Contact Us</Link> now to get started!
+{/* <Link href={'/about'}>  */}
           </p>
         </div>
       </div>
