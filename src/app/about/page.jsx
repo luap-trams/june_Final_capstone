@@ -69,7 +69,7 @@ const AboutUs = () => {
           <p>
           At SmartOptions Property Solutions Limited, we don't just manage properties, we maximize their value. Our expert team ensures seamless tenant relations, proactive maintenance, and strategic investment growth, giving you peace of mind and higher returns. With a commitment to professionalism and attention to detail, we handle every aspect of your property with care. <br /><br />
 Partner with us today and experience hassle-free property management that delivers real results. <br />
-<br /><Link href={'/contact'} className='bg-blue-900 text-white p-2 rounded-sm'>Contact Us</Link> now to get started!
+<br /><Link href={'/contact'} className='border-2 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white p-2.5 text-xs font-bold uppercase rounded-3xl'>Contact Us</Link> now to get started!
 {/* <Link href={'/about'}>  */}
           </p>
         </div>

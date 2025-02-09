@@ -15,7 +15,7 @@ export default function PropertyCard({ rating, title, type, description, categor
       <div className='group items-center relative'>
         
       <a href='https://api.whatsapp.com/send?phone=2348020817992&text=Hello,%0A%0AI%27d%20love%20to%20view%20this%20property.%20When%20would%20be%20a%20good%20time%20to%20arrange%20a%20visit?' target="_blank"> 
-      <p className={`property-status font-bold text-xs uppercase absolute  w-full ${isAvailable ? 'text-white bottom-0 bg-blue-900 group-hover:bg-green-600' : 'text-white bottom-0 bg-red-600'} text-center p-2`}>
+      <p className={`property-status font-bold text-xs uppercase absolute  w-full ${isAvailable ? 'text-white bottom-0 bg-blue-900  group-hover:bg-green-600' : 'text-white bottom-0 bg-blue-900'} text-center p-2`}>
         {isAvailable ? "schedule an inspection" : status } 
       </p>
         </a>
